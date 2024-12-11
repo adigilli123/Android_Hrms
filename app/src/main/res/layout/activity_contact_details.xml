@@ -1,0 +1,212 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/hrmsbackgroundcolor"
+    tools:context=".ContactDetailsActivity">
+
+    <RelativeLayout
+        android:id="@+id/primarydetailssdetails"
+        android:layout_width="match_parent"
+        android:layout_height="90dp"
+        android:background="@color/hrmsheadercolor"
+        android:paddingTop="30dp">
+
+        <ImageView
+            android:id="@+id/contactdetails_back"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentBottom="true"
+            android:layout_marginStart="10dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginEnd="10dp"
+            android:layout_marginBottom="10dp"
+            android:src="@drawable/left_arrow"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_marginStart="10dp"
+            android:layout_toRightOf="@+id/contactdetails_back"
+            android:layout_centerHorizontal="true"
+            android:layout_marginEnd="10dp"
+            android:layout_marginBottom="13dp"
+            android:fontFamily="@font/mulish_bold"
+            android:text="Contact Details"
+            android:textColor="@color/white"
+            android:textSize="14dp"/>
+
+    </RelativeLayout>
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_below="@+id/primarydetailssdetails"
+        android:layout_height="wrap_content">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_marginTop="20dp"
+            android:layout_height="wrap_content">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp">
+
+                <TextView
+                    android:id="@+id/firstname"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Primary Phone Number"
+                    android:textColor="@color/icongrey"
+                    android:fontFamily="@font/mulish_bold"
+                    android:layout_marginStart="20dp"
+                    android:textSize="12dp"/>
+
+                <RelativeLayout
+                    android:id="@+id/primaryProfRelative"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="20dp"
+                    android:layout_below="@+id/firstname"
+                    android:background="@drawable/layout_border_filled"
+                    android:layout_marginTop="5dp"
+                    android:layout_marginEnd="20dp"
+                    android:padding="15dp">
+
+                    <TextView
+                        android:id="@+id/contactnumber_Tv"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:layout_marginStart="10dp"
+                        android:text="-None-"
+                        android:fontFamily="@font/mulish_medium"
+                        android:textColor="@color/hrmstext"
+                        android:textSize="14sp"/>
+
+                </RelativeLayout>
+
+
+                <TextView
+                    android:id="@+id/lastname"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Email Address"
+                    android:fontFamily="@font/mulish_bold"
+                    android:layout_below="@+id/primaryProfRelative"
+                    android:textColor="@color/icongrey"
+                    android:layout_marginStart="20dp"
+                    android:layout_marginTop="10dp"
+                    android:textSize="12dp"/>
+
+                <RelativeLayout
+                    android:id="@+id/lastnameProfRelative"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="20dp"
+                    android:layout_below="@+id/lastname"
+                    android:background="@drawable/layout_border_filled"
+                    android:layout_marginTop="5dp"
+                    android:layout_marginEnd="20dp"
+                    android:padding="15dp">
+
+                    <TextView
+                        android:id="@+id/emailTv"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:layout_marginStart="10dp"
+                        android:text="-None-"
+                        android:fontFamily="@font/mulish_medium"
+                        android:textColor="@color/hrmstext"
+                        android:textSize="14sp"/>
+
+                </RelativeLayout>
+
+
+                <TextView
+                    android:id="@+id/empid"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Emergency Contact Relationship"
+                    android:layout_below="@+id/lastnameProfRelative"
+                    android:textColor="@color/icongrey"
+                    android:layout_marginStart="20dp"
+                    android:fontFamily="@font/mulish_bold"
+                    android:layout_marginTop="10dp"
+                    android:textSize="12dp"/>
+
+                <RelativeLayout
+                    android:id="@+id/empidProfRelative"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="20dp"
+                    android:layout_below="@+id/empid"
+                    android:background="@drawable/layout_border_filled"
+                    android:layout_marginTop="5dp"
+                    android:layout_marginEnd="20dp"
+                    android:padding="15dp">
+
+                    <TextView
+                        android:id="@+id/emergencyrelation_Tv"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:layout_marginStart="10dp"
+                        android:text="-None-"
+                        android:fontFamily="@font/mulish_medium"
+                        android:textColor="@color/hrmstext"
+                        android:textSize="14sp"/>
+
+                </RelativeLayout>
+
+
+                <TextView
+                    android:id="@+id/dob"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Emergency Contact Phone Number"
+                    android:layout_below="@+id/empidProfRelative"
+                    android:textColor="@color/icongrey"
+                    android:fontFamily="@font/mulish_bold"
+                    android:layout_marginStart="20dp"
+                    android:layout_marginTop="10dp"
+                    android:textSize="12dp"/>
+
+                <RelativeLayout
+                    android:id="@+id/dobProfRelative"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="20dp"
+                    android:layout_below="@+id/dob"
+                    android:background="@drawable/layout_border_filled"
+                    android:layout_marginTop="5dp"
+                    android:layout_marginEnd="20dp"
+                    android:padding="15dp">
+
+                    <TextView
+                        android:id="@+id/emergencyNumberTv"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:layout_marginStart="10dp"
+                        android:text="-None-"
+                        android:fontFamily="@font/mulish_medium"
+                        android:textColor="@color/hrmstext"
+                        android:textSize="14sp"/>
+
+                </RelativeLayout>
+            </RelativeLayout>
+        </RelativeLayout>
+    </ScrollView>
+    <ProgressBar
+        android:id="@+id/progressBar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:visibility="gone" />
+</RelativeLayout>

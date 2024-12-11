@@ -1,0 +1,142 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/hrmsbackgroundcolor"
+    tools:context=".AllEmployeesActivity">
+
+    <RelativeLayout
+        android:id="@+id/headerAllemp"
+        android:layout_width="match_parent"
+        android:layout_height="90dp"
+        android:background="@drawable/gradient_background"
+        android:paddingTop="30dp">
+
+        <ImageView
+            android:id="@+id/allemp_back"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentBottom="true"
+            android:layout_marginStart="10dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginEnd="10dp"
+            android:layout_marginBottom="10dp"
+            android:src="@drawable/left_arrow"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginStart="10dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginEnd="10dp"
+            android:layout_marginBottom="10dp"
+            android:fontFamily="@font/montserratsemibold"
+            android:text="All Employees"
+            android:textColor="@color/white"
+            android:textSize="14dp"/>
+    </RelativeLayout>
+
+  <RelativeLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_below="@+id/headerAllemp"
+    android:layout_marginTop="5dp"
+    android:id="@+id/search">
+
+<!--      <androidx.appcompat.widget.SearchView-->
+<!--          android:id="@+id/searchView"-->
+<!--          android:layout_width="match_parent"-->
+<!--          android:layout_height="wrap_content"-->
+<!--          android:background="@color/hrmsbackgroundcolor"-->
+<!--          app:queryHint="Start typing employee name"-->
+<!--          app:iconifiedByDefault="false"-->
+<!--          android:theme="@style/CustomSearchView"-->
+<!--          android:layout_alignParentStart="true"-->
+<!--          android:visibility="gone"-->
+<!--          android:layout_alignParentEnd="true"-->
+<!--          android:layout_marginTop="10dp"-->
+<!--          android:textAppearance="@style/CustomSearchViewText"-->
+<!--          app:searchIcon="@drawable/ic_search_white_custom"/>-->
+
+      <RelativeLayout
+          android:layout_width="match_parent"
+          android:layout_height="wrap_content"
+          android:id="@+id/searchrl"
+
+          android:layout_marginTop="5dp"
+          android:layout_marginStart="15dp"
+          android:layout_marginEnd="20dp">
+
+          <ImageView
+              android:layout_width="wrap_content"
+              android:layout_height="wrap_content"
+              android:id="@+id/searchimage"
+              android:layout_marginTop="10dp"
+              android:layout_centerVertical="true"
+              android:layout_marginStart="15dp"
+              android:background="@drawable/ic_search_white_custom"/>
+
+          <EditText
+              android:id="@+id/search_text"
+              android:layout_width="match_parent"
+              android:layout_height="wrap_content"
+              android:layout_marginStart="10dp"
+              android:layout_marginLeft="12dp"
+              android:backgroundTint="@color/hrmsbackgroundcolor"
+              android:layout_centerVertical="true"
+              android:layout_toRightOf="@id/searchimage"
+              android:hint="Start typing employee name"
+              android:fontFamily="@font/mulish_regular"
+              android:textColorHint="@color/search_text"
+              android:textColor="@color/hrmstext"
+              android:inputType="text"
+              android:singleLine="true"
+              android:maxLength="20"
+              android:textSize="16dp"/>
+
+          <ImageView
+              android:id="@+id/crossicon"
+              android:layout_width="wrap_content"
+              android:layout_height="wrap_content"
+              android:src="@drawable/cross_icon"
+              android:visibility="gone"
+              android:layout_marginEnd="10dp"
+              android:layout_alignParentEnd="true"
+              android:layout_centerVertical="true"/>
+
+      </RelativeLayout>
+ </RelativeLayout>
+
+<!--    <Button-->
+<!--        android:id="@+id/menubtn"-->
+<!--        android:layout_width="match_parent"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:text="Menu"-->
+<!--        android:background="@drawable/layout_border_filled"-->
+<!--        android:layout_below="@+id/search"-->
+<!--        android:textColor="@color/hrmstext"-->
+<!--        android:fontFamily="@font/mulish_semibold"-->
+<!--        android:layout_marginEnd="30dp"-->
+<!--        android:layout_marginStart="30dp"-->
+<!--        android:layout_marginTop="20dp"/>-->
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/allemp_recycler"
+        android:layout_width="match_parent"
+        android:layout_below="@+id/search"
+        android:layout_marginTop="10dp"
+        android:background="@color/hrmscornorbackgroundcolor"
+        android:layout_height="wrap_content"/>
+    <ProgressBar
+        android:id="@+id/progressBar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:visibility="gone" />
+
+</RelativeLayout>

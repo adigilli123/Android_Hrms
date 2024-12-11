@@ -1,0 +1,36 @@
+<selector xmlns:android="http://schemas.android.com/apk/res/android">
+    <!-- Thumb when checked (ON) -->
+<!--    <item android:state_checked="true">-->
+<!--        <shape android:shape="oval">-->
+<!--            <solid android:color="#27a34c" /> &lt;!&ndash; Custom ON color &ndash;&gt;-->
+<!--        </shape>-->
+<!--    </item>-->
+<!--    &lt;!&ndash; Thumb when unchecked (OFF) &ndash;&gt;-->
+<!--    <item>-->
+<!--        <shape android:shape="oval">-->
+<!--            <solid android:color="#ff4081" /> &lt;!&ndash; Custom OFF color &ndash;&gt;-->
+<!--        </shape>-->
+<!--    </item>-->
+
+    <item>
+        <layer-list>
+            <item
+                android:bottom="5dp"
+                android:top="5dp"
+                android:start="5dp"
+                android:end="5dp">
+                <shape
+                    android:shape="rectangle">
+                    <corners
+                        android:radius="25dp">
+                    </corners>
+                    <size
+                        android:width="130dp"
+                        android:height="40dp"/>
+                    <solid
+                        android:color="@color/deepSky"/>
+                </shape>
+            </item>
+        </layer-list>
+    </item>
+</selector>

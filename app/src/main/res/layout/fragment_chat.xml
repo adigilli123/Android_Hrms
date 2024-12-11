@@ -1,0 +1,231 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/hrmsbackgroundcolor"
+    tools:context=".Fragments.ChatFragment">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+    <RelativeLayout
+        android:id="@+id/applyleave_Relative"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="20dp"
+        android:background="@drawable/layout_border_filled"
+        android:layout_marginTop="20dp"
+        android:layout_marginEnd="20dp"
+        android:padding="10dp">
+
+        <ImageView
+            android:id="@+id/kycProfIv"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_marginTop="5dp"
+            android:background="@drawable/custom_round"
+            android:backgroundTint="@color/hrms_yellow"
+            android:padding="6dp"
+            android:src="@drawable/appluleaeve_icon"/>
+
+        <TextView
+            android:id="@+id/kycProfiEt"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:layout_marginStart="20dp"
+            android:layout_toEndOf="@id/kycProfIv"
+            android:text="Apply Leave"
+            android:fontFamily="@font/mulish_bold"
+            android:textColor="@color/hrmstext"
+            android:textSize="14sp"/>
+
+        <TextView
+            android:id="@+id/applyleave_arrow"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="20dp"
+            android:layout_marginTop="16dp"
+            android:layout_alignParentEnd="true"
+            android:background="@drawable/ic_right_arrow"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/kycProfIv"
+            android:textSize="13dp"
+            android:fontFamily="@font/mulish_medium"
+            android:textColor="@color/icongrey"
+            android:layout_marginTop="10dp"
+            android:layout_marginStart="5dp"
+            android:text="You can apply leave from here."/>
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/leaveinfo_Relative"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="20dp"
+        android:layout_below="@+id/applyleave_Relative"
+        android:background="@drawable/layout_border_filled"
+        android:layout_marginTop="20dp"
+        android:layout_marginEnd="20dp"
+        android:padding="10dp">
+
+        <ImageView
+            android:id="@+id/leavesinfo_Tv"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_marginTop="5dp"
+            android:background="@drawable/custom_round"
+            android:backgroundTint="@color/hrms_pinkish"
+            android:padding="5dp"
+            android:src="@drawable/leaveinfo_icon"/>
+
+        <TextView
+            android:id="@+id/leaveinfo_Tv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:layout_marginStart="20dp"
+            android:layout_toEndOf="@id/leavesinfo_Tv"
+            android:text="Leaves Info"
+            android:fontFamily="@font/mulish_bold"
+            android:textColor="@color/hrmstext"
+            android:textSize="14sp"/>
+
+        <TextView
+            android:id="@+id/leaveinfo_arrow"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="20dp"
+            android:layout_marginTop="16dp"
+            android:layout_alignParentEnd="true"
+            android:background="@drawable/ic_right_arrow"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/leavesinfo_Tv"
+            android:textSize="13dp"
+            android:fontFamily="@font/mulish_medium"
+            android:textColor="@color/icongrey"
+            android:layout_marginTop="10dp"
+            android:layout_marginStart="5dp"
+            android:text="You can check available leaves and history here."/>
+
+    </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/managerapprove_Rl"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="20dp"
+            android:layout_below="@+id/leaveinfo_Relative"
+            android:background="@drawable/layout_border_filled"
+            android:layout_marginTop="20dp"
+            android:layout_marginEnd="20dp"
+            android:padding="10dp">
+
+            <ImageView
+                android:id="@+id/managerimg_Iv"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:layout_marginTop="5dp"
+                android:background="@drawable/custom_round"
+                android:backgroundTint="@color/violet"
+                android:padding="5dp"
+                android:src="@drawable/managerapprove_icon"/>
+
+            <TextView
+                android:id="@+id/managerapprove_Tv_Tv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="16dp"
+                android:layout_marginStart="20dp"
+                android:layout_toEndOf="@id/managerimg_Iv"
+                android:text="Manager Approve/Reject"
+                android:fontFamily="@font/mulish_bold"
+                android:textColor="@color/hrmstext"
+                android:textSize="14sp"/>
+
+            <TextView
+                android:id="@+id/manager_arrow"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="20dp"
+                android:layout_marginTop="16dp"
+                android:layout_alignParentEnd="true"
+                android:background="@drawable/ic_right_arrow"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/managerapprove_Tv_Tv"
+                android:textSize="13dp"
+                android:fontFamily="@font/mulish_medium"
+                android:textColor="@color/icongrey"
+                android:layout_marginTop="10dp"
+                android:layout_marginStart="5dp"
+                android:text="@string/you_can_check_approve_reject_employees_leaves_here"/>
+        </RelativeLayout>
+
+
+        <RelativeLayout
+            android:id="@+id/payslip_Relative"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="20dp"
+            android:layout_below="@+id/managerapprove_Rl"
+            android:background="@drawable/layout_border_filled"
+            android:layout_marginTop="20dp"
+            android:layout_marginEnd="20dp"
+            android:padding="10dp">
+
+            <ImageView
+                android:id="@+id/payslip_Iv"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:layout_marginTop="5dp"
+                android:background="@drawable/custom_round"
+                android:backgroundTint="@color/hrms_green"
+                android:padding="7dp"
+                android:src="@drawable/payslip_icon"/>
+
+            <TextView
+                android:id="@+id/payslip_Tv1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="16dp"
+                android:layout_marginStart="20dp"
+                android:layout_toEndOf="@id/payslip_Iv"
+                android:text="Pay slip"
+                android:fontFamily="@font/mulish_bold"
+                android:textColor="@color/hrmstext"
+                android:textSize="14sp"/>
+
+            <TextView
+                android:id="@+id/payslip_arrow"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="20dp"
+                android:layout_marginTop="16dp"
+                android:layout_alignParentEnd="true"
+                android:background="@drawable/ic_right_arrow"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/payslip_Iv"
+                android:textSize="13dp"
+                android:fontFamily="@font/mulish_medium"
+                android:textColor="@color/icongrey"
+                android:layout_marginTop="10dp"
+                android:layout_marginStart="5dp"
+                android:text="You can check and download here."/>
+        </RelativeLayout>
+    </RelativeLayout>
+</FrameLayout>

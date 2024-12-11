@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:id="@+id/fragment_container"
+    android:background="@color/hrmsbackgroundcolor"
+    android:layout_height="match_parent">
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+    <ImageView
+        android:id="@+id/jhbdsjb"
+        android:layout_width="200dp"
+        android:layout_height="100dp"
+        android:layout_centerInParent="true"
+        android:src="@drawable/ic_hrms" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Under Development"
+        android:layout_below="@+id/jhbdsjb"
+        android:layout_centerHorizontal="true"
+        android:textSize="25dp"
+        android:fontFamily="@font/mulish_bold"
+        android:layout_marginTop="5dp"
+        android:textColor="@color/app_lightblue" />
+    </RelativeLayout>
+</FrameLayout>

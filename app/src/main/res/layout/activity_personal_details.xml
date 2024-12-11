@@ -1,0 +1,338 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/hrmsbackgroundcolor"
+    tools:context=".PersonalDetails">
+
+    <RelativeLayout
+        android:id="@+id/headerpersonaldetails"
+        android:layout_width="match_parent"
+        android:layout_height="90dp"
+        android:background="@drawable/gradient_background"
+        android:paddingTop="30dp">
+
+        <ImageView
+            android:id="@+id/personaldetails_back"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentBottom="true"
+            android:layout_marginStart="10dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginEnd="10dp"
+            android:layout_marginBottom="15dp"
+            android:src="@drawable/left_arrow"/>
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/cardview1"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_marginStart="10dp"
+            android:layout_marginTop="7dp"
+            android:layout_toRightOf="@+id/personaldetails_back"
+            app:cardCornerRadius="1000dp">
+
+            <ImageView
+                android:id="@+id/imageView_Iv"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:scaleType="fitXY"
+                android:contentDescription="profile_image"
+                android:layout_gravity="start"
+                android:layout_centerVertical="true"/>
+        </androidx.cardview.widget.CardView>
+
+
+        <TextView
+            android:id="@+id/name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@+id/cardview1"
+            android:layout_marginTop="13dp"
+            android:fontFamily="@font/mulish_bold"
+            android:text=""
+            android:textStyle="bold"
+            android:layout_marginStart="10dp"
+            android:textColor="@color/white"
+            android:textSize="14dp"/>
+
+        <TextView
+            android:id="@+id/location"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@+id/cardview1"
+            android:layout_marginTop="3dp"
+            android:layout_marginEnd="10dp"
+            android:layout_below="@+id/name"
+            android:fontFamily="@font/mulish_regular"
+            android:text=""
+            android:layout_marginStart="10dp"
+            android:textColor="@color/hrmstext"
+            android:textSize="12dp"/>
+    </RelativeLayout>
+
+
+    <TextView
+        android:id="@+id/primarydetails"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:layout_marginStart="20dp"
+        android:text="Personal Information"
+        android:layout_marginTop="20dp"
+        android:fontFamily="@font/mulish_bold"
+        android:textStyle="bold"
+        android:layout_below="@+id/headerpersonaldetails"
+        android:textColor="@color/hrmstext"
+        android:textSize="15sp"/>
+
+
+    <RelativeLayout
+        android:id="@+id/primaryProfRelative"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="10dp"
+        android:layout_below="@+id/primarydetails"
+        android:background="@drawable/layout_border_filled"
+        android:layout_marginTop="20dp"
+        android:layout_marginEnd="10dp"
+        android:padding="15dp">
+
+
+        <TextView
+            android:id="@+id/primarytext_Tv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+           android:layout_centerVertical="true"
+            android:layout_marginStart="10dp"
+            android:text="Primary Details"
+            android:textColor="@color/icongrey"
+            android:fontFamily="@font/mulish_medium"
+            android:textSize="14sp"/>
+
+        <TextView
+            android:id="@+id/primary_arrow"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:backgroundTint="@color/icongrey"
+            android:layout_alignParentEnd="true"
+            android:background="@drawable/ic_right_arrow"/>
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/contactProfRelative"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="10dp"
+        android:layout_below="@+id/primaryProfRelative"
+        android:background="@drawable/layout_border_filled"
+        android:layout_marginTop="10dp"
+        android:layout_marginEnd="10dp"
+        android:padding="15dp">
+
+        <TextView
+            android:id="@+id/contacttext_Tv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginStart="10dp"
+            android:text="Contact Details"
+            android:textColor="@color/icongrey"
+            android:fontFamily="@font/mulish_medium"
+            android:textSize="14sp"/>
+
+        <TextView
+            android:id="@+id/contact_arrow"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:backgroundTint="@color/icongrey"
+            android:layout_alignParentEnd="true"
+            android:background="@drawable/ic_right_arrow"/>
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/addressProfRelative"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="10dp"
+        android:layout_below="@+id/contactProfRelative"
+        android:background="@drawable/layout_border_filled"
+        android:layout_marginTop="10dp"
+        android:layout_marginEnd="10dp"
+        android:padding="15dp">
+
+
+        <TextView
+            android:id="@+id/addresstext_Tv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginStart="10dp"
+            android:text="Address"
+            android:textColor="@color/icongrey"
+            android:fontFamily="@font/mulish_medium"
+            android:textSize="14sp"/>
+
+        <TextView
+            android:id="@+id/address_arrow"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_alignParentEnd="true"
+            android:backgroundTint="@color/icongrey"
+            android:background="@drawable/ic_right_arrow"/>
+
+    </RelativeLayout>
+
+
+    <RelativeLayout
+        android:id="@+id/relationProfRelative"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="10dp"
+        android:layout_below="@+id/addressProfRelative"
+        android:background="@drawable/layout_border_filled"
+        android:layout_marginTop="10dp"
+        android:layout_marginEnd="10dp"
+        android:padding="15dp">
+
+
+        <TextView
+            android:id="@+id/relationtext_Tv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginStart="10dp"
+            android:text="Relations"
+            android:textColor="@color/icongrey"
+            android:fontFamily="@font/mulish_medium"
+            android:textSize="14sp"/>
+
+        <TextView
+            android:id="@+id/relation_arrow"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_alignParentEnd="true"
+            android:backgroundTint="@color/icongrey"
+            android:background="@drawable/ic_right_arrow"/>
+
+    </RelativeLayout>
+
+
+    <RelativeLayout
+        android:id="@+id/experienceProfRelative"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="10dp"
+        android:layout_below="@+id/relationProfRelative"
+        android:background="@drawable/layout_border_filled"
+        android:layout_marginTop="10dp"
+        android:layout_marginEnd="10dp"
+        android:padding="15dp">
+
+
+        <TextView
+            android:id="@+id/experiencetext_Tv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginStart="10dp"
+            android:text="Experience"
+            android:textColor="@color/icongrey"
+            android:fontFamily="@font/mulish_medium"
+            android:textSize="14sp"/>
+
+        <TextView
+            android:id="@+id/experience_arrow"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:backgroundTint="@color/icongrey"
+            android:layout_alignParentEnd="true"
+            android:background="@drawable/ic_right_arrow"/>
+
+    </RelativeLayout>
+
+
+    <RelativeLayout
+        android:id="@+id/educationProfRelative"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="10dp"
+        android:layout_below="@+id/experienceProfRelative"
+        android:background="@drawable/layout_border_filled"
+        android:layout_marginTop="10dp"
+        android:layout_marginEnd="10dp"
+        android:padding="15dp">
+
+
+        <TextView
+            android:id="@+id/educationtext_Tv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginStart="10dp"
+            android:text="Education"
+            android:textColor="@color/icongrey"
+            android:fontFamily="@font/mulish_medium"
+            android:textSize="14sp"/>
+
+        <TextView
+            android:id="@+id/education_arrow"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_alignParentEnd="true"
+            android:backgroundTint="@color/icongrey"
+            android:background="@drawable/ic_right_arrow"/>
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/summaryProfRelative"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="10dp"
+        android:layout_below="@+id/educationProfRelative"
+        android:background="@drawable/layout_border_filled"
+        android:layout_marginTop="10dp"
+        android:layout_marginEnd="10dp"
+        android:padding="15dp">
+
+
+        <TextView
+            android:id="@+id/summarytext_Tv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginStart="10dp"
+            android:text="Professional Summary"
+            android:textColor="@color/icongrey"
+            android:fontFamily="@font/mulish_medium"
+            android:textSize="14sp"/>
+
+        <TextView
+            android:id="@+id/summary_arrow"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_alignParentEnd="true"
+            android:backgroundTint="@color/icongrey"
+            android:background="@drawable/ic_right_arrow"/>
+
+    </RelativeLayout>
+    <ProgressBar
+        android:id="@+id/progressBar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:visibility="gone" />
+
+</RelativeLayout>

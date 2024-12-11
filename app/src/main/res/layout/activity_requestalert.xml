@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="280dp"
+    android:background="@color/hrmsbackgroundcolor"
+    android:layout_height="wrap_content">
+
+    <RelativeLayout
+        android:id="@+id/rl_header"
+        android:layout_width="fill_parent"
+        android:layout_height="50dp"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="30dp">
+
+        <TextView
+            android:id="@+id/text_reminder"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            android:fontFamily="@font/montserratbold"
+            android:text="Are you sure you want to request?"
+            android:textColor="@color/hrmstext"
+            android:textSize="15dp"/>
+    </RelativeLayout>
+    <!-- <View
+         android:layout_width="match_parent"
+         android:layout_height="2dp"
+         android:layout_below="@+id/rl_header"
+         android:background="@color/colorPrimary"
+         android:id="@+id/view"/>-->
+
+
+    <ImageView
+        android:id="@+id/imagegif"
+        android:layout_width="150dp"
+        android:layout_height="100dp"
+        android:layout_below="@+id/rl_header"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true"
+        android:background="@drawable/ic_gifsuccess"
+        android:visibility="gone"/>
+
+    <TextView
+        android:id="@+id/txt_msg"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="85dp"
+        android:layout_marginRight="20dp"
+        android:fontFamily="@font/montserratregular"
+        android:text="exitapp"
+        android:textColor="@color/black"
+        android:textSize="12sp"
+        android:visibility="gone"/>
+
+    <RelativeLayout
+        android:id="@+id/rl_buttons"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/imagegif"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="80dp">
+
+        <TextView
+            android:id="@+id/successno"
+            android:layout_width="100dp"
+            android:layout_height="30dp"
+            android:layout_alignParentLeft="true"
+            android:layout_gravity="center"
+            android:layout_marginLeft="30dp"
+            android:background="@drawable/layout_border_filled"
+            android:fontFamily="@font/montserratbold"
+            android:gravity="center"
+            android:text="No"
+            android:textColor="@color/hrmstext"
+            android:textSize="14sp"/>
+
+
+        <TextView
+            android:id="@+id/successdone"
+            android:layout_width="100dp"
+            android:layout_height="30dp"
+            android:layout_alignParentRight="true"
+            android:layout_gravity="center"
+            android:layout_marginRight="30dp"
+            android:background="@drawable/alertcancel"
+            android:fontFamily="@font/montserratbold"
+            android:gravity="center"
+            android:text="Yes"
+            android:textColor="@color/white"
+            android:textSize="14sp"/>
+
+
+    </RelativeLayout>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="30dp"
+        android:layout_below="@+id/rl_buttons"/>
+</RelativeLayout>

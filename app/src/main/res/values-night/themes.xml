@@ -1,0 +1,20 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <!-- Base application theme. -->
+    <style name="Base.Theme.HRMS_Xyug" parent="Theme.Material3.DayNight.NoActionBar">
+        <!-- Customize your dark theme here. -->
+        <!-- <item name="colorPrimary">@color/my_dark_primary</item> -->
+    </style>
+    <style name="CustomDatePickerStyle" parent="ThemeOverlay.Material3.MaterialCalendar">
+        <item name="colorPrimary">@color/icongrey</item> <!-- Button background color -->
+        <item name="colorOnPrimary">@color/hrmstext</item> <!-- Button text color -->
+        <item name="colorSurface">@color/icongrey</item> <!-- Date picker background color -->
+        <item name="colorOnSurface">@color/hrmstext</item> <!-- Date text color -->
+    </style>
+
+    <!-- Custom DatePicker Button style -->
+    <style name="CustomDatePickerButton" parent="Widget.MaterialComponents.Button.OutlinedButton">
+        <item name="android:textColor">@color/icongrey</item> <!-- Text color for the buttons -->
+        <item name="backgroundTint">@color/icongrey</item> <!-- Background color for the buttons -->
+    </style>
+
+</resources>

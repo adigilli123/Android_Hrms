@@ -1,0 +1,270 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:background="@color/hrmsbackgroundcolor"
+    android:layout_height="wrap_content">
+
+    <RelativeLayout
+        android:id="@+id/primaryProfRelative"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="4dp"
+        android:layout_marginEnd="10dp"
+        android:background="@drawable/layout_border_filled"
+        android:padding="15dp">
+
+        <TextView
+            android:id="@+id/eduationtext_Tv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginStart="10dp"
+            android:text="Education 1"
+            android:fontFamily="@font/mulish_semibold"
+            android:textColor="@color/icongrey"
+            android:textSize="14sp" />
+
+        <TextView
+            android:id="@+id/experienceArrow_Tv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_centerVertical="true"
+            android:layout_marginStart="10dp"
+            android:background="@drawable/ic_uparrow"
+            android:backgroundTint="@color/hrmstext"
+            android:textColor="@color/icongrey"
+            android:textSize="14sp"
+            android:visibility="gone" />
+
+        <TextView
+            android:id="@+id/experienceArrow_Tv2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_centerVertical="true"
+            android:layout_marginStart="10dp"
+            android:background="@drawable/ic_down_arrow"
+            android:backgroundTint="@color/hrmstext"
+            android:textColor="@color/icongrey"
+            android:textSize="14sp" />
+    </RelativeLayout>
+    <RelativeLayout
+        android:id="@+id/educationdetyaiol"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:visibility="gone"
+        android:layout_below="@+id/primaryProfRelative"
+        android:layout_marginTop="10dp">
+
+        <TextView
+            android:id="@+id/firstname"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="School/Institution Name"
+            android:textColor="@color/icongrey"
+            android:fontFamily="@font/mulish_bold"
+            android:layout_marginStart="20dp"
+            android:textSize="12dp"/>
+
+        <RelativeLayout
+            android:id="@+id/primary1ProfRelative"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="10dp"
+            android:layout_below="@+id/firstname"
+            android:background="@drawable/layout_border_filled"
+            android:layout_marginTop="5dp"
+            android:layout_marginEnd="10dp"
+            android:padding="15dp">
+
+            <TextView
+                android:id="@+id/institutetext_Tv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginStart="10dp"
+                android:text="-None-"
+                android:fontFamily="@font/mulish_medium"
+                android:textColor="@color/hrmstext"
+                android:textSize="14sp"/>
+        </RelativeLayout>
+
+
+        <TextView
+            android:id="@+id/lastname"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="GPA/Grade"
+            android:fontFamily="@font/mulish_bold"
+            android:layout_below="@+id/primary1ProfRelative"
+            android:textColor="@color/icongrey"
+            android:layout_marginStart="20dp"
+            android:layout_marginTop="10dp"
+            android:textSize="12dp"/>
+
+        <RelativeLayout
+            android:id="@+id/lastnameProfRelative"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="10dp"
+            android:layout_below="@+id/lastname"
+            android:background="@drawable/layout_border_filled"
+            android:layout_marginTop="5dp"
+            android:layout_marginEnd="10dp"
+            android:padding="15dp">
+
+            <TextView
+                android:id="@+id/gradetext_Tv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginStart="10dp"
+                android:text="-None-"
+                android:fontFamily="@font/mulish_medium"
+                android:textColor="@color/hrmstext"
+                android:textSize="14sp"/>
+        </RelativeLayout>
+
+
+        <TextView
+            android:id="@+id/empid"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Degree/Qualification"
+            android:layout_below="@+id/lastnameProfRelative"
+            android:textColor="@color/icongrey"
+            android:fontFamily="@font/mulish_bold"
+            android:layout_marginStart="20dp"
+            android:layout_marginTop="10dp"
+            android:textSize="12dp"/>
+
+        <RelativeLayout
+            android:id="@+id/empidProfRelative"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="10dp"
+            android:layout_below="@+id/empid"
+            android:background="@drawable/layout_border_filled"
+            android:layout_marginTop="5dp"
+            android:layout_marginEnd="10dp"
+            android:padding="15dp">
+
+            <TextView
+                android:id="@+id/qualificationtext_Tv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginStart="10dp"
+                android:text="-None-"
+                android:fontFamily="@font/mulish_medium"
+                android:textColor="@color/hrmstext"
+                android:textSize="14sp"/>
+        </RelativeLayout>
+
+        <TextView
+            android:id="@+id/dob"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Relevant Courses/Projects"
+            android:layout_below="@+id/empidProfRelative"
+            android:textColor="@color/icongrey"
+            android:layout_marginStart="20dp"
+            android:fontFamily="@font/mulish_bold"
+            android:layout_marginTop="10dp"
+            android:textSize="12dp"/>
+
+        <RelativeLayout
+            android:id="@+id/dobProfRelative"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="10dp"
+            android:layout_below="@+id/dob"
+            android:background="@drawable/layout_border_filled"
+            android:layout_marginTop="5dp"
+            android:layout_marginEnd="10dp"
+            android:padding="15dp">
+
+            <TextView
+                android:id="@+id/coursetext_Tv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginStart="10dp"
+                android:text="-None-"
+                android:fontFamily="@font/mulish_medium"
+                android:textColor="@color/hrmstext"
+                android:textSize="14sp"/>
+
+        </RelativeLayout>
+
+        <TextView
+            android:id="@+id/yop"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Year Of Passing"
+            android:layout_below="@+id/dobProfRelative"
+            android:textColor="@color/icongrey"
+            android:fontFamily="@font/mulish_bold"
+            android:layout_marginStart="20dp"
+            android:layout_marginTop="10dp"
+            android:textSize="12dp"/>
+
+        <RelativeLayout
+            android:id="@+id/yopProfRelative"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="10dp"
+            android:layout_below="@+id/yop"
+            android:background="@drawable/layout_border_filled"
+            android:layout_marginTop="5dp"
+            android:layout_marginEnd="10dp"
+            android:padding="15dp">
+
+            <TextView
+                android:id="@+id/addyoptext_Tv"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginStart="10dp"
+                android:text="-None-"
+                android:fontFamily="@font/mulish_medium"
+                android:background="@color/hrmscornorbackgroundcolor"
+                android:textColor="@color/hrmstext"
+                android:textSize="14sp"/>
+        </RelativeLayout>
+
+        <TextView
+            android:id="@+id/eduactionImage"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Add Cerificate"
+            android:layout_below="@+id/yopProfRelative"
+            android:textColor="@color/icongrey"
+            android:layout_marginStart="20dp"
+            android:fontFamily="@font/mulish_bold"
+            android:layout_marginTop="10dp"
+            android:textSize="12dp"/>
+
+        <RelativeLayout
+            android:id="@+id/educationimgProfRelative"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="10dp"
+            android:layout_below="@+id/eduactionImage"
+            android:background="@drawable/layout_border_filled"
+            android:layout_marginTop="5dp"
+            android:layout_marginEnd="10dp"
+            android:padding="5dp">
+
+            <ImageView
+                android:id="@+id/educationimagetext_Tv"
+                android:layout_width="80dp"
+                android:layout_height="70dp"
+                android:layout_centerVertical="true"
+                android:layout_marginStart="10dp"/>
+
+        </RelativeLayout>
+    </RelativeLayout>
+</RelativeLayout>

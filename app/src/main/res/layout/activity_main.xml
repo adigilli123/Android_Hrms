@@ -1,0 +1,134 @@
+ <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+     android:background="@color/hrmsbackgroundcolor"
+     android:orientation="vertical"
+     android:gravity="center"
+    android:layout_height="match_parent">
+
+     <TextView
+         android:layout_width="match_parent"
+         android:layout_height="wrap_content"
+         android:text="Login to HRMS"
+         android:textSize="18dp"
+         android:fontFamily="@font/mulish_bold"
+         android:layout_marginLeft="20dp"
+         android:layout_marginBottom="20dp"
+         android:textColor="@color/hrmstext"
+         android:textStyle="bold" />
+     <EditText
+         android:id="@+id/et_emailmobile"
+         android:layout_width="match_parent"
+         android:layout_height="60dp"
+         android:layout_centerInParent="true"
+         android:layout_marginLeft="24dp"
+         android:layout_marginRight="24dp"
+         android:background="@drawable/layout_border_filled"
+         android:digits="0123456789"
+         android:drawableEnd="@drawable/ic_phone"
+         android:drawableStart="@drawable/ninetyoneiconn"
+         android:drawablePadding="1dp"
+         android:paddingEnd="10dp"
+         android:fontFamily="@font/mulish_regular"
+         android:hint="Enter mobile number"
+         android:inputType="number"
+         android:maxLength="10"
+         android:paddingLeft="12dp"
+         android:textColor="@color/hrmstext"
+         android:textColorHint="@color/icongrey"
+         android:textSize="14dp" />
+
+<!--            <TextView-->
+<!--                android:id="@+id/tvemailerror"-->
+<!--                android:layout_width="match_parent"-->
+<!--                android:layout_height="wrap_content"-->
+<!--                android:layout_marginLeft="26dp"-->
+<!--                android:layout_marginTop="5dp"-->
+<!--                android:text=""-->
+<!--                android:textColor="#E41708"-->
+<!--                android:textSize="12sp"-->
+<!--                android:visibility="gone"/>-->
+
+<!--             <LinearLayout-->
+<!--                android:id="@+id/llpass"-->
+<!--                android:layout_width="match_parent"-->
+<!--                android:layout_height="60dp"-->
+<!--                android:layout_below="@+id/log_edm2"-->
+<!--                android:layout_marginLeft="24dp"-->
+<!--                android:layout_marginTop="24dp"-->
+<!--                android:backgroundTint="@color/hrmscornorbackgroundcolor"-->
+<!--                android:layout_marginRight="24dp"-->
+<!--                android:background="@drawable/layout_border_filled"-->
+<!--                android:orientation="horizontal">-->
+
+<!--                <EditText-->
+<!--                    android:id="@+id/et_password"-->
+<!--                    android:layout_width="0dp"-->
+<!--                    android:layout_height="match_parent"-->
+<!--                    android:layout_weight="1"-->
+<!--                    android:background="@color/transaperant"-->
+<!--                    android:drawableLeft="@drawable/ic_lock"-->
+<!--                    android:drawablePadding="10dp"-->
+<!--                    android:fontFamily="@font/montserratregular"-->
+<!--                    android:hint="Enter your password"-->
+<!--                    android:inputType="textPassword"-->
+<!--                    android:paddingLeft="12dp"-->
+<!--                    android:textColorHint="@color/icongrey"-->
+<!--                    android:textSize="14dp"/>-->
+
+<!--                <ImageView-->
+<!--                    android:id="@+id/ivconfirmeye"-->
+<!--                    android:layout_width="wrap_content"-->
+<!--                    android:layout_height="wrap_content"-->
+<!--                    android:layout_gravity="center"-->
+<!--                    android:layout_marginTop="2dp"-->
+<!--                    android:layout_marginRight="12dp"-->
+<!--                    android:src="@drawable/eye_off"/>-->
+<!--            </LinearLayout>-->
+
+<!--            <TextView-->
+<!--                android:id="@+id/tvpasserror"-->
+<!--                android:layout_width="match_parent"-->
+<!--                android:layout_height="wrap_content"-->
+<!--                android:layout_marginLeft="26dp"-->
+<!--                android:layout_marginTop="5dp"-->
+<!--                android:text=""-->
+<!--                android:textColor="#E41708"-->
+<!--                android:textSize="12sp"-->
+<!--                android:visibility="gone"/>-->
+
+<!--            <TextView-->
+<!--                android:id="@+id/tv_forgotpass"-->
+<!--                android:layout_width="match_parent"-->
+<!--                android:layout_height="wrap_content"-->
+<!--                android:layout_below="@+id/tvpasserror"-->
+<!--                android:layout_marginTop="20dp"-->
+<!--                android:layout_marginRight="24dp"-->
+<!--                android:gravity="right"-->
+<!--                android:text="forgotpassword"-->
+<!--                android:textColor="@color/black"-->
+<!--                android:visibility="gone"/>-->
+
+            <Button
+                android:id="@+id/btn_login"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_marginLeft="24dp"
+                android:layout_marginTop="50dp"
+                android:layout_marginRight="24dp"
+                android:background="@drawable/button_bg"
+                android:fontFamily="@font/mulish_semibold"
+                android:text="Continue"
+                android:layout_below="@+id/et_emailmobile"
+                android:textAllCaps="false"
+                android:textColor="@color/white"/>
+
+     <TextView
+         android:id="@+id/extra_textview4"
+         android:layout_width="match_parent"
+         android:layout_height="200dp"
+         android:layout_below="@+id/jhsdbckjabds"
+         android:text=""
+         android:scrollbars="vertical"
+         android:visibility="invisible"/>
+ </LinearLayout>

@@ -1,0 +1,467 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/hrmsbackgroundcolor"
+    tools:context="com.example.Leaves.ApplyLeave">
+
+    <RelativeLayout
+        android:id="@+id/headerAllemp"
+        android:layout_width="match_parent"
+        android:layout_height="90dp"
+        android:background="@drawable/gradient_background"
+        android:paddingTop="30dp">
+
+        <ImageView
+            android:id="@+id/applyleave_back"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentBottom="true"
+            android:layout_marginStart="10dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginEnd="10dp"
+            android:layout_marginBottom="10dp"
+            android:src="@drawable/left_arrow"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginStart="10dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginEnd="10dp"
+            android:layout_marginBottom="10dp"
+            android:fontFamily="@font/montserratsemibold"
+            android:text="Apply Leave"
+            android:textColor="@color/white"
+            android:textSize="14dp"/>
+    </RelativeLayout>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_below="@+id/headerAllemp"
+        android:layout_height="wrap_content">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:id="@+id/leavetypeeee"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="20dp"
+            android:layout_marginTop="15dp"
+            android:layout_marginEnd="10dp"
+            android:fontFamily="@font/mulish_bold"
+            android:text="Leave Type"
+            android:textColor="@color/white"
+            android:textSize="16dp"/>
+
+
+
+        <RadioGroup
+            android:id="@+id/leaveTypeRadioGroup"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/leavetypeeee"
+            android:layout_marginStart="15dp"
+            android:layout_marginTop="5dp"
+            android:orientation="horizontal">
+
+            <RadioButton
+                android:id="@+id/radioCasual"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Casual"
+                android:fontFamily="@font/mulish_medium"
+                android:buttonTint="@color/deepSky"
+                android:textColor="@color/hrmstext"
+                android:textSize="13dp"/>
+
+            <RadioButton
+                android:id="@+id/radioMedical"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Medical"
+                android:fontFamily="@font/mulish_medium"
+                android:layout_marginStart="10dp"
+                android:buttonTint="@color/deepSky"
+                android:textColor="@color/hrmstext"
+                android:textSize="13dp"/>
+
+            <RadioButton
+                android:id="@+id/radioOther"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Other Type"
+                android:fontFamily="@font/mulish_medium"
+                android:layout_marginStart="10dp"
+                android:buttonTint="@color/deepSky"
+                android:textColor="@color/hrmstext"
+                android:textSize="13dp"/>
+        </RadioGroup>
+
+        <LinearLayout
+            android:id="@+id/fromto"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/leaveTypeRadioGroup"
+            android:weightSum="2">
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:weightSum="1">
+
+        <TextView
+            android:id="@+id/from"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="From"
+            android:layout_weight="1"
+            android:textColor="@color/deepSky"
+            android:textSize="14dp"
+            android:gravity="start"
+            android:fontFamily="@font/mulish_bold"
+            android:layout_marginTop="10dp"
+            android:layout_marginStart="20dp"/>
+
+                <TextView
+                    android:id="@+id/fromdate_Tv"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginStart="20dp"
+                    android:hint="Select To Date"
+                    android:textColorHint="@color/hrmstext"
+                    android:layout_weight="1"
+                    android:layout_marginTop="5dp"
+                    android:fontFamily="@font/mulish_medium"
+                    android:background="@drawable/applyleave_background"
+                    android:textColor="@color/hrmstext"
+                    android:layout_marginEnd="20dp"
+                    android:gravity="center_vertical"
+                    android:drawableEnd="@drawable/calender"
+                    android:drawablePadding="15dp"
+                    android:paddingTop="10dp"
+                    android:paddingBottom="10dp"
+                    android:paddingEnd="22dp"
+                    android:paddingStart="15dp"
+                    android:textSize="13sp"/>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:weightSum="1"
+                android:orientation="vertical">
+
+            <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Day Type"
+            android:textColor="@color/hrmstext"
+            android:textSize="14dp"
+            android:layout_weight="1"
+            android:gravity="start"
+            android:fontFamily="@font/mulish_bold"
+            android:layout_marginTop="10dp"
+            android:layout_marginEnd="0dp"/>
+
+                <RelativeLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="5dp"
+                    android:paddingTop="7dp"
+                    android:paddingBottom="4dp"
+                    android:paddingEnd="10dp"
+                    android:paddingStart="10dp"
+                    android:background="@drawable/applyleave_background"
+                    android:layout_weight="1">
+
+                    <Spinner
+                        android:id="@+id/daytype1_Spinner"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        style="@style/CustomSpinnerStyle"/>
+                </RelativeLayout>
+            </LinearLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/too"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:layout_below="@+id/fromto"
+            android:weightSum="2">
+
+            <LinearLayout
+                android:id="@+id/todate_Ln"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:weightSum="1">
+
+                <TextView
+                    android:id="@+id/toodate"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="To"
+                    android:layout_weight="1"
+                    android:textColor="@color/deepSky"
+                    android:textSize="14dp"
+                    android:gravity="start"
+                    android:fontFamily="@font/mulish_bold"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginStart="20dp"/>
+
+                <TextView
+                    android:id="@+id/todate_Tv"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginStart="20dp"
+                    android:hint="Select To Date"
+                    android:textColorHint="@color/hrmstext"
+                    android:layout_weight="1"
+                    android:layout_marginTop="5dp"
+                    android:fontFamily="@font/mulish_medium"
+                    android:background="@drawable/applyleave_background"
+                    android:textColor="@color/hrmstext"
+                    android:layout_marginEnd="20dp"
+                    android:gravity="center_vertical"
+                    android:drawableEnd="@drawable/calender"
+                    android:drawablePadding="15dp"
+                    android:paddingTop="10dp"
+                    android:paddingBottom="10dp"
+                    android:paddingEnd="22dp"
+                    android:paddingStart="15dp"
+                    android:textSize="13sp"/>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:weightSum="1"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/daytype_Tvv"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Day Type"
+                    android:textColor="@color/hrmstext"
+                    android:textSize="14dp"
+                    android:layout_weight="1"
+                    android:gravity="start"
+                    android:fontFamily="@font/mulish_bold"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginEnd="0dp"/>
+
+                <RelativeLayout
+                    android:id="@+id/datetype_Rl"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="5dp"
+                    android:paddingTop="7dp"
+                    android:paddingBottom="4dp"
+                    android:paddingEnd="10dp"
+                    android:paddingStart="10dp"
+                    android:background="@drawable/applyleave_background"
+                    android:layout_weight="1">
+                    <Spinner
+                        android:id="@+id/daytype2_Spinner"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        style="@style/CustomSpinnerStyle"/>
+                </RelativeLayout>
+            </LinearLayout>
+        </LinearLayout>
+
+        <RelativeLayout
+            android:id="@+id/noofkleaves"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="15dp"
+            android:padding="5dp"
+            android:layout_marginEnd="20dp"
+            android:layout_marginStart="20dp"
+            android:background="@drawable/layout_border_filled"
+            android:layout_below="@+id/too">
+        <TextView
+            android:id="@+id/keyskillstext_Tv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:text="No.of Leave Days"
+            android:layout_marginStart="10dp"
+            android:fontFamily="@font/mulish_bold"
+            android:textColor="@color/hrmstext"
+            android:textSize="14sp"/>
+
+            <TextView
+                android:id="@+id/leavecount"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:layout_marginEnd="10dp"
+                android:text="0.0"
+                android:textSize="14dp"
+                android:gravity="center"
+                android:textColor="@color/hrmstext"
+                android:fontFamily="@font/mulish_bold"
+                android:background="@drawable/custom_round"
+                android:layout_alignParentEnd="true"
+                android:backgroundTint="@color/deepSky"/>
+        </RelativeLayout>
+
+        <TextView
+            android:id="@+id/reasonforleavesss"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Reason for leave"
+            android:textSize="14dp"
+            android:textColor="@color/hrmstext"
+            android:layout_marginStart="20dp"
+            android:layout_marginTop="20dp"
+            android:fontFamily="@font/mulish_bold"
+            android:layout_below="@+id/noofkleaves"/>
+
+        <RelativeLayout
+            android:id="@+id/reasaonlist"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/reasonforleavesss"
+            android:paddingBottom="40dp"
+            android:paddingTop="10dp"
+            android:paddingStart="5dp"
+            android:background="@drawable/layout_border_filled"
+            android:layout_marginTop="5dp"
+            android:layout_marginStart="20dp"
+            android:layout_marginEnd="20dp">
+
+            <EditText
+                android:id="@+id/leavereason_Et"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:hint="Type here reason for leave"
+                android:fontFamily="@font/mulish_medium"
+                android:inputType="text"
+                android:digits="abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ "
+                android:maxLength="100"
+                android:textColorHint="@color/icongrey"
+                android:background="@color/hrmscornorbackgroundcolor"
+                android:textColor="@color/hrmstext"
+                android:textSize="13sp"/>
+        </RelativeLayout>
+
+        <TextView
+            android:id="@+id/documentlist_Tv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Attach Documents (Optional)"
+            android:textColor="@color/hrmstext"
+            android:textSize="14dp"
+            android:layout_marginStart="20dp"
+            android:layout_marginTop="20dp"
+            android:layout_below="@+id/reasaonlist"/>
+
+        <RelativeLayout
+            android:id="@+id/documentbox1"
+            android:layout_width="match_parent"
+            android:layout_below="@+id/documentlist_Tv"
+            android:padding="10dp"
+            android:layout_marginStart="20dp"
+            android:layout_marginEnd="20dp"
+            android:layout_marginTop="5dp"
+            android:background="@drawable/layout_border_filled"
+            android:layout_height="wrap_content">
+
+        <ImageView
+            android:id="@+id/add_document"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:src="@drawable/documentaddicon"/>
+
+        <TextView
+            android:id="@+id/documentbox"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginStart="20dp"
+            android:text="Upload or drop a file right here"
+            android:layout_weight="1"
+            android:layout_toEndOf="@+id/add_document"
+            android:layout_marginTop="5dp"
+            android:fontFamily="@font/mulish_medium"
+            android:textColor="@color/icongrey"
+            android:layout_marginEnd="20dp"
+            android:drawablePadding="15dp"
+            android:textSize="14sp"/>
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/notify"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="15dp"
+            android:padding="10dp"
+            android:layout_marginEnd="20dp"
+            android:layout_marginStart="20dp"
+            android:background="@drawable/layout_border_filled"
+            android:layout_below="@+id/documentbox1">
+            <TextView
+                android:id="@+id/notifytext"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:text="Notify"
+                android:layout_marginStart="10dp"
+                android:fontFamily="@font/mulish_bold"
+                android:textColor="@color/hrmstext"
+                android:textSize="14sp"/>
+
+            <TextView
+                android:id="@+id/notifyEmpBtn"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentEnd="true"
+                android:layout_marginEnd="10dp"
+                android:text="Add Employee"
+                android:padding="5dp"
+                android:background="@drawable/applyleavebuttonbackground"
+                android:textColor="@color/hrmstext"
+                android:textSize="12dp"/>
+        </RelativeLayout>
+
+        <Button
+            android:id="@+id/submitBtn"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_below="@+id/notify"
+            android:layout_marginStart="20dp"
+            android:layout_marginTop="40dp"
+            android:layout_marginEnd="20dp"
+            android:backgroundTint="@color/deepSky"
+            android:text="Apply Leave"
+            android:textColor="@color/hrmstext"
+            android:textSize="12dp"/>
+
+        <TextView
+            android:id="@+id/extra_textview4"
+            android:layout_width="match_parent"
+            android:layout_height="320dp"
+            android:layout_below="@+id/submitBtn"
+            android:text=""
+            android:scrollbars="vertical"
+            android:visibility="invisible"/>
+       </RelativeLayout>
+    </ScrollView>
+</RelativeLayout>

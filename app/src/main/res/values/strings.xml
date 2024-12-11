@@ -1,0 +1,31 @@
+<resources>
+    <string name="app_name">HRMS</string>
+    <string name="atrate">\u00402023 X-YUG Technologies Pvt Ltd.</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <!--
+      <string name="google_maps_api_key">AIzaSyDxmI-egQMzBcA6nTfhsEMYaEQpjciRdCk</string>
+    -->
+
+    //
+    <string name="google_maps_api_key">AIzaSyDSyk2F40eVC1GxOm7sus6V4hVFlhPmGzI</string>
+
+
+    <string name="drawer_open">Open</string>
+    <string name="drawer_close">Close</string>
+    <string name="pdf_show_local_progress_title">Loading</string>
+    <string name="pdf_show_local_progress_content">Completed</string>
+    <string name="permission_request_message">Allow</string>
+    <string name="otp_has_been_sent_to_your_mobile_number">OTP has been sent to your mobile number,</string>
+    <string name="receive">I didn\'t receive a code: <font color='#A53860'>Resend</font></string>
+    <string name="school_institution_name">School/Institution Name<font color="#FF0000">*</font></string>
+    <string name="gpa_grade">GPA/Grade<font color="#FF0000">*</font></string>
+    <string name="degree_qualification">Degree/Qualification<font color="#FF0000">*</font></string>
+    <string name="year_of_passing">Year Of Passing<font color="#FF0000">*</font></string>
+    <string name="job_title">Job Title<font color="#FF0000">*</font></string>
+    <string name="company_name">Company Name<font color="#FF0000">*</font></string>
+    <string name="start_date">Start Date<font color="#FF0000">*</font></string>
+    <string name="end_date_or_current">End Date or Current<font color="#FF0000">*</font></string>
+    <string name="you_can_check_approve_reject_employees_leaves_here"><![CDATA[You can check approve &amp; reject employees leaves here.]]></string>
+
+</resources>

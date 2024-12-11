@@ -1,0 +1,385 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/hrmsbackgroundcolor"
+    tools:context=".ProfessionalSummaryDetailsActivity">
+
+    <RelativeLayout
+        android:id="@+id/primarydetailssdetails"
+        android:layout_width="match_parent"
+        android:layout_height="90dp"
+        android:background="@color/hrmsheadercolor"
+        android:paddingTop="30dp">
+
+        <ImageView
+            android:id="@+id/summarydetails_back"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentBottom="true"
+            android:layout_marginStart="10dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginEnd="10dp"
+            android:layout_marginBottom="10dp"
+            android:src="@drawable/left_arrow"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_marginStart="10dp"
+            android:layout_toRightOf="@+id/summarydetails_back"
+            android:layout_marginEnd="10dp"
+            android:layout_marginBottom="13dp"
+            android:fontFamily="@font/mulish_bold"
+            android:text="Professional Summary"
+            android:textColor="@color/white"
+            android:textSize="14sp"/>
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/editbtn"
+            android:layout_width="70dp"
+            android:layout_height="35dp"
+            android:backgroundTint="@color/bluetext"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentEnd="true"
+            android:layout_marginEnd="10dp"
+            android:layout_marginBottom="5dp"
+            app:cardCornerRadius="33dp">
+
+            <Button
+                android:id="@+id/addprofessional_Tv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Edit"
+                android:fontFamily="@font/mulish_bold"
+                android:background="@color/bluetext"
+                android:textSize="12dp"
+                android:textColor="@color/hrmstext" />
+        </androidx.cardview.widget.CardView>
+
+
+<!--        <ImageView-->
+<!--            android:id="@+id/addprofessional_Tv"-->
+<!--            android:layout_width="wrap_content"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            android:src="@drawable/edit_icon1"-->
+<!--            android:layout_marginEnd="10dp"-->
+<!--            android:layout_alignParentBottom="true"-->
+<!--            android:layout_marginTop="5dp"-->
+<!--            android:layout_alignParentEnd="true"-->
+<!--            android:padding="5dp"/>-->
+    </RelativeLayout>
+
+    <ScrollView
+        android:id="@+id/scrollview_prosummary"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/primarydetailssdetails"
+        android:layout_weight="1">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="10dp">
+        <RelativeLayout
+            android:id="@+id/relative_Rll"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp">
+
+                <TextView
+                    android:id="@+id/firstname"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Summary Of Qualifications"
+                    android:fontFamily="@font/mulish_bold"
+                    android:textColor="@color/icongrey"
+                    android:layout_marginStart="20dp"
+                    android:textSize="12sp"/>
+
+                <RelativeLayout
+                    android:id="@+id/primaryProfRelative"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="10dp"
+                    android:layout_below="@+id/firstname"
+                    android:background="@drawable/layout_border_filled"
+                    android:layout_marginTop="5dp"
+                    android:layout_marginEnd="10dp">
+
+                    <TextView
+                        android:id="@+id/summaryqualificationtext_Tv"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:layout_marginStart="0dp"
+                        android:text="-None-"
+                        android:fontFamily="@font/mulish_medium"
+                        android:textColor="@color/hrmstext"
+                        android:padding="15dp"
+                        android:textSize="14sp"/>
+
+                    <EditText
+                        android:id="@+id/addsummaryqualificationtext_Tv"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:layout_marginStart="0dp"
+                        android:hint="-None-"
+                        android:digits="abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ "
+                        android:fontFamily="@font/mulish_medium"
+                        android:inputType="text"
+                        android:maxLength="40"
+                        android:visibility="gone"
+                        android:textColorHint="@color/icongrey"
+                        android:background="@color/hrmscornorbackgroundcolor"
+                        android:textColor="@color/hrmstext"
+                        android:padding="15dp"
+                        android:textSize="14sp"/>
+
+                </RelativeLayout>
+                <TextView
+                    android:id="@+id/summaryerrormessage"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text=""
+                    android:layout_marginStart="15dp"
+                    android:layout_marginTop="3dp"
+                    android:visibility="gone"
+                    android:textColor="@color/app_red"
+                    android:layout_below="@+id/primaryProfRelative"/>
+
+                <TextView
+                    android:id="@+id/lastname"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Key Skills"
+                    android:fontFamily="@font/mulish_bold"
+                    android:textColor="@color/icongrey"
+                    android:layout_below="@+id/summaryerrormessage"
+                    android:layout_marginStart="20dp"
+                    android:layout_marginTop="10dp"
+                    android:textSize="12sp"/>
+
+                <RelativeLayout
+                    android:id="@+id/lastnameProfRelative"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="10dp"
+                    android:layout_below="@+id/lastname"
+                    android:background="@drawable/layout_border_filled"
+                    android:layout_marginTop="5dp"
+                    android:layout_marginEnd="10dp">
+
+                    <TextView
+                        android:id="@+id/keyskillstext_Tv"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:layout_marginStart="0dp"
+                        android:text="-None-"
+                        android:padding="15dp"
+                        android:fontFamily="@font/mulish_medium"
+                        android:textColor="@color/hrmstext"
+                        android:textSize="14sp"/>
+
+                    <EditText
+                        android:id="@+id/addkeyskillstext_Tv"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:layout_marginStart="0dp"
+                        android:hint="-None-"
+                        android:fontFamily="@font/mulish_medium"
+                        android:inputType="text"
+                        android:digits="abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ "
+                        android:maxLength="100"
+                        android:visibility="gone"
+                        android:textColorHint="@color/icongrey"
+                        android:background="@color/hrmscornorbackgroundcolor"
+                        android:padding="15dp"
+                        android:textColor="@color/hrmstext"
+                        android:textSize="14sp"/>
+
+                </RelativeLayout>
+                <TextView
+                    android:id="@+id/keyskillserrormessage"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text=""
+                    android:layout_marginStart="15dp"
+                    android:layout_marginTop="3dp"
+                    android:visibility="gone"
+                    android:textColor="@color/app_red"
+                    android:layout_below="@+id/lastnameProfRelative"/>
+
+                <TextView
+                    android:id="@+id/empid"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Career Objective"
+                    android:fontFamily="@font/mulish_bold"
+                    android:textColor="@color/icongrey"
+                    android:layout_below="@+id/keyskillserrormessage"
+                    android:layout_marginStart="20dp"
+                    android:layout_marginTop="10dp"
+                    android:textSize="12sp"/>
+
+                <RelativeLayout
+                    android:id="@+id/empidProfRelative"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="10dp"
+                    android:layout_below="@+id/empid"
+                    android:background="@drawable/layout_border_filled"
+                    android:layout_marginTop="5dp"
+                    android:layout_marginEnd="10dp">
+
+                    <TextView
+                        android:id="@+id/careertext_Tv"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:layout_marginStart="0dp"
+                        android:text="-None-"
+                        android:padding="15dp"
+                        android:fontFamily="@font/mulish_medium"
+                        android:textColor="@color/hrmstext"
+                        android:textSize="14sp"/>
+
+                    <EditText
+                        android:id="@+id/addcareertext_Tv"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:layout_marginStart="0dp"
+                        android:hint="-None-"
+                        android:fontFamily="@font/mulish_medium"
+                        android:inputType="text"
+                        android:maxLength="50"
+                        android:digits="abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ "
+                        android:textColorHint="@color/icongrey"
+                        android:visibility="gone"
+                        android:background="@color/hrmscornorbackgroundcolor"
+                        android:padding="15dp"
+                        android:textColor="@color/hrmstext"
+                        android:textSize="14sp"/>
+
+                </RelativeLayout>
+                <TextView
+                    android:id="@+id/careererrormessage"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text=""
+                    android:layout_marginStart="15dp"
+                    android:layout_marginTop="3dp"
+                    android:visibility="gone"
+                    android:textColor="@color/app_red"
+                    android:layout_below="@+id/empidProfRelative"/>
+
+                <TextView
+                    android:id="@+id/dob"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Highlights Of Achievements"
+                    android:layout_below="@+id/careererrormessage"
+                    android:textColor="@color/icongrey"
+                    android:fontFamily="@font/mulish_bold"
+                    android:layout_marginStart="20dp"
+                    android:layout_marginTop="10dp"
+                    android:textSize="12sp"/>
+
+                <RelativeLayout
+                    android:id="@+id/dobProfRelative"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="10dp"
+                    android:layout_below="@+id/dob"
+                    android:background="@drawable/layout_border_filled"
+                    android:layout_marginTop="5dp"
+                    android:layout_marginEnd="10dp">
+
+                    <TextView
+                        android:id="@+id/acheivementtext_Tv"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:layout_marginStart="0dp"
+                        android:text="-None-"
+                        android:padding="15dp"
+                        android:fontFamily="@font/mulish_medium"
+                        android:textColor="@color/hrmstext"
+                        android:textSize="14sp"/>
+
+                    <EditText
+                        android:id="@+id/addacheivementtext_Tv"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:layout_marginStart="0dp"
+                        android:hint="-None-"
+                        android:fontFamily="@font/mulish_medium"
+                        android:inputType="text"
+                        android:maxLength="100"
+                        android:visibility="gone"
+                        android:digits="abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ "
+                        android:textColorHint="@color/icongrey"
+                        android:background="@color/hrmscornorbackgroundcolor"
+                        android:padding="15dp"
+                        android:textColor="@color/hrmstext"
+                        android:textSize="14sp"/>
+
+                </RelativeLayout>
+                <TextView
+                    android:id="@+id/highlighterrormessage"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text=""
+                    android:layout_marginStart="15dp"
+                    android:layout_marginTop="3dp"
+                    android:visibility="gone"
+                    android:textColor="@color/app_red"
+                    android:layout_below="@+id/dobProfRelative"/>
+
+                <Button
+                    android:id="@+id/addsummarybtn"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Submit"
+                    android:layout_marginStart="20dp"
+                    android:layout_marginEnd="20dp"
+                    android:layout_below="@+id/highlighterrormessage"
+                    android:textColor="@color/white"
+                    android:layout_marginTop="40dp"
+                    android:visibility="gone"
+                    android:fontFamily="@font/mulish_semibold"
+                    android:layout_marginBottom="20dp"/>
+
+                <TextView
+                    android:id="@+id/extra_text3"
+                    android:layout_width="match_parent"
+                    android:layout_height="300dp"
+                    android:layout_below="@+id/addsummarybtn"
+                    android:text=""
+                    android:visibility="invisible" />
+
+            </RelativeLayout>
+        </RelativeLayout>
+        </LinearLayout>
+    </ScrollView>
+
+    <ProgressBar
+        android:id="@+id/progressBar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:visibility="gone" />
+</RelativeLayout>

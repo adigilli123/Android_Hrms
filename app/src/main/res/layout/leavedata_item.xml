@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- res/layout/leave_item.xml -->
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+        <RelativeLayout
+            android:id="@+id/casualleavetype"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:layout_marginStart="10dp"
+            android:layout_marginEnd="10dp"
+            android:padding="15dp"
+            android:background="@drawable/layout_border_filled">
+
+            <TextView
+                android:id="@+id/pendingLeaves"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:text="0.0"
+                android:textColor="@color/hrmstext"
+                android:textSize="16dp"
+                android:gravity="center"
+                android:fontFamily="@font/mulish_bold"
+                android:background="@drawable/custom_round"
+                android:backgroundTint="@color/hrms_darkpinkist" />
+
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_toEndOf="@+id/pendingLeaves"
+                android:layout_centerVertical="true"
+                android:layout_marginStart="10dp"
+                android:layout_height="wrap_content">
+                <TextView
+                    android:id="@+id/leaveType"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Casual leave"
+                    android:fontFamily="@font/mulish_bold"
+                    android:textColor="@color/hrmstext"
+                    android:textSize="14sp"/>
+
+                <TextView
+                    android:id="@+id/daysavaialable"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="days Available"
+                    android:layout_marginStart="2dp"
+                    android:layout_below="@+id/leaveType"
+                    android:fontFamily="@font/mulish_regular"
+                    android:textColor="@color/icongrey"
+                    android:textSize="10sp"/>
+            </RelativeLayout>
+            <TextView
+                android:id="@+id/casualleave_Tv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentEnd="true"
+                android:layout_marginEnd="10dp"
+                android:text="Apply Leave"
+                android:layout_centerVertical="true"
+                android:paddingStart="10dp"
+                android:paddingEnd="10dp"
+                android:paddingTop="5dp"
+                android:paddingBottom="5dp"
+                android:background="@drawable/applyleavebuttonbackground"
+                android:textColor="@color/hrmstext"
+                android:textSize="12dp" />
+
+        </RelativeLayout>
+
+</RelativeLayout>

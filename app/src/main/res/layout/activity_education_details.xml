@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/hrmsbackgroundcolor"
+    tools:context=".EducationDetailsActivity">
+    <RelativeLayout
+        android:id="@+id/primarydetailssdetails"
+        android:layout_width="match_parent"
+        android:layout_height="90dp"
+        android:background="@color/hrmsheadercolor"
+        android:paddingTop="30dp">
+
+        <ImageView
+            android:id="@+id/eduaction_back"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentBottom="true"
+            android:layout_marginStart="10dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginEnd="10dp"
+            android:layout_marginBottom="10dp"
+            android:src="@drawable/left_arrow"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_marginStart="10dp"
+            android:layout_toRightOf="@+id/eduaction_back"
+            android:layout_marginEnd="10dp"
+            android:layout_marginBottom="13dp"
+            android:fontFamily="@font/mulish_bold"
+            android:text="Education"
+            android:textColor="@color/white"
+            android:textSize="14dp"/>
+
+    </RelativeLayout>
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_below="@+id/primarydetailssdetails"
+        android:layout_height="wrap_content">
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/education_recyclerview"
+            android:layout_width="match_parent"
+            android:layout_marginTop="5dp"
+            android:layout_height="wrap_content"/>
+
+        <TextView
+            android:id="@+id/education_Tv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="+Add Education"
+            android:textColor="@color/bluetext"
+            android:layout_below="@+id/education_recyclerview"
+            android:layout_marginTop="10dp"
+            android:textSize="13dp"
+            android:fontFamily="@font/mulish_bold"
+            android:layout_marginEnd="20dp"
+            android:layout_marginBottom="20dp"
+            android:layout_alignParentEnd="true"/>
+        </RelativeLayout>
+    </ScrollView>
+    <ProgressBar
+        android:id="@+id/progressBar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:visibility="gone" />
+</RelativeLayout>

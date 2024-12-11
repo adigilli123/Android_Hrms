@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="purple_200">#2596be</color>
+    <color name="purple_500">#2596be</color>
+    <color name="purple_700">#2596be</color>
+    <color name="teal_200">#FF03DAC5</color>
+    <color name="teal_700">#FF018786</color>
+    <color name="black">#FF000000</color>
+    <color name="white">#FFFFFF</color>
+    <color name="app_darkblue">#24bbeb</color>
+    <color name="app_darkgreen">#288a59</color>
+    <color name="app_lightgreen">#44b474</color>
+    <color name="app_lightblue">#24ccfc</color>
+    <color name="app_red">#d22534</color>
+    <color name="transaperant">#00FFFFFF</color>
+    <color name="light_gray">#d3d3d3</color>
+    <color name="orange">#FFA500</color>
+    <color name="blue">#288a59</color>
+    <color name="purple">#800080</color>
+    <color name="light_maroon">#d03d56</color>
+    <color name="violet">#8F00FF</color>
+    <color name="light_pink">#FA99FA</color>
+    <color name="yellow">#858508</color>
+    <color name="orangee">#EE6C4D</color>
+    <color name="light_brown">#8a5b06</color>
+    <color name="selectstart">#35445b</color>
+    <color name="darkgray">#575252</color>
+    <color name="LightBrown">#656d6e</color>
+    <color name="lightgrayfull">#F5F2F2</color>
+
+    <color name="hrmstext">#E8F2FF</color>
+    <color name="hrmsbordercolor">#33373C</color>
+    <color name="hrmscornorbackgroundcolor">#252A30</color>
+    <color name="hrmsbackgroundcolor">#202428</color>
+    <color name="purple1">#9B5DE5</color>
+    <color name="pink1">#F15BB5</color>
+    <color name="sky">#00F5D4</color>
+    <color name="litegreen">#8CB369</color>
+    <color name="orange1">#FF7D00</color>gre
+    <color name="icongrey">#8B9199</color>
+    <color name="gradientcolor2">#BD4733</color>
+    <color name="gradientcolor">#195DBA</color>
+    <color name="bluetext">#2986CE</color>
+    <color name="hrmsheadercolor">#34353A</color>
+    <color name="search_text">#AFAFAF</color>
+    <color name="ash">#4A5363</color>
+    <color name="blueee">#4889C1</color>
+    <color name="greenable">#74A661</color>
+    <color name="litepruple">#A079B0</color>
+    <color name="bright_green">#47C272</color>
+    <color name="deepSky">#2DA3FF</color>
+    <color name="hrms_yellow">#F7B801</color>
+    <color name="hrms_pinkish">#F28482</color>
+    <color name="hrms_darkpinkist">#DA627D</color>
+    <color name="hrms_green">#81B29A</color>
+    <color name="hrms_bluish">#3A6EA5</color>
+
+    <color name="A_Blue_Jay">#2B547E</color>
+    <color name="B_Dark_Slat">#2B3856</color>
+    <color name="C_Deep_Sea_Blue">#123456</color>
+    <color name="D_Medium_Teal">#045F5F</color>
+    <color name="E_Deep_Teal">#033E3E</color>
+    <color name="F_Gunmetal">#2C3539</color>
+    <color name="G_Gold_variant1">#A57200</color>
+    <color name="H_Dark_Forest_Green">#254117</color>
+    <color name="I_Western_Charcoal">#49413F</color>
+    <color name="J_Gold_variant2">#DB9D00</color>
+    <color name="K_Vermilion">#7E191B</color>
+    <color name="L_Dark_Raspberry">#872657</color>
+    <color name="M_Crimson_W3C">#DC143C</color>
+    <color name="N_Bright_Maroon">#C32148</color>
+    <color name="O_Plum_Purple">#583739</color>
+    <color name="P_Purple_Navy">#4E5180</color>
+    <color name="Q_Purple_Monster">#461B7E</color>
+    <color name="R_Gold_variant3">#FFB300</color>
+    <color name="S_Black_Cat">#413839</color>
+    <color name="T_Marble_Blue">#566D7E</color>
+    <color name="U_TEAL">#008F7A</color>
+    <color name="V_BLUE">#2C73D2</color>
+    <color name="W_VARIANT1">#236072</color>
+    <color name="X_VARIANT2">#00928C</color>
+    <color name="Y_VARIANT3">#007984</color>
+    <color name="Z_VARIANT4">#C031D1</color>
+
+    <integer-array name="androidcolors">
+        <item>@color/blue</item>
+        <item>@color/purple</item>
+        <item>@color/D_Medium_Teal</item>
+        <item>@color/orange</item>
+        <item>@color/Z_VARIANT4</item>
+        <item>@color/X_VARIANT2</item>
+        <item>@color/Q_Purple_Monster</item>
+        <item>@color/T_Marble_Blue</item>
+        <item>@color/H_Dark_Forest_Green</item>
+        <item>@color/N_Bright_Maroon</item>
+    </integer-array>
+</resources>

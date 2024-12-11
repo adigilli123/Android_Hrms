@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@color/hrmsbackgroundcolor"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:padding="8dp">
+
+    <RelativeLayout
+        android:id="@+id/notifyemp_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/layout_border_filled"
+        android:paddingLeft="10dp">
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/cardview"
+            android:layout_width="40dp"
+            android:layout_centerVertical="true"
+            android:layout_height="40dp"
+            android:layout_marginTop="20dp"
+            app:cardCornerRadius="1000dp">
+            <ImageView
+                android:id="@+id/notifyemployee_img"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:backgroundTint="@color/white"
+                android:scaleType="fitXY"
+                android:layout_centerVertical="true"
+                android:contentDescription="profile_image"/>
+        </androidx.cardview.widget.CardView>
+        <TextView
+            android:id="@+id/firstName"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:layout_marginStart="20dp"
+            android:layout_toEndOf="@id/cardview"
+            android:text="Prasanna"
+            android:fontFamily="@font/mulish_semibold"
+            android:textColor="@color/hrmstext"
+            android:textSize="14sp"/>
+
+
+        <TextView
+            android:id="@+id/notifydesignation"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/firstName"
+            android:layout_toRightOf="@+id/cardview"
+            android:textSize="13dp"
+            android:fontFamily="@font/mulish_medium"
+            android:layout_marginTop="5dp"
+            android:textColor="@color/icongrey"
+            android:layout_marginStart="20dp"
+            android:text="Android Developer"/>
+
+    </RelativeLayout>
+
+</LinearLayout>

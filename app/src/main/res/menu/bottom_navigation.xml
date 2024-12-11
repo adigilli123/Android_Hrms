@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:id="@+id/nav_home"
+        android:icon="@drawable/ic_home"
+        android:title="Home" />
+    <item
+        android:id="@+id/nav_Inbox"
+        android:icon="@drawable/inbox_icon"
+        android:title="Inbox" />
+
+    <item
+        android:id="@+id/nav_me"
+        android:icon="@drawable/me_icon"
+        android:title="Me" />
+    <item
+        android:id="@+id/nav_team"
+        android:icon="@drawable/ic_team"
+        android:title="My Team" />
+    <item
+        android:id="@+id/nav_org"
+        android:icon="@drawable/org_icon"
+        android:title="Org" />
+</menu>

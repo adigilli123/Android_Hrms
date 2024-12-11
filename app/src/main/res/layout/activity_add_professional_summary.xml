@@ -1,0 +1,244 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/hrmsbackgroundcolor"
+    tools:context=".AddProfessionalSummaryActivity">
+
+    <RelativeLayout
+        android:id="@+id/primarydetailssdetails"
+        android:layout_width="match_parent"
+        android:layout_height="90dp"
+        android:background="@color/hrmsheadercolor"
+        android:paddingTop="30dp">
+
+         <ImageView
+            android:id="@+id/Addsummarydetails_back"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentBottom="true"
+            android:layout_marginStart="10dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginEnd="10dp"
+            android:layout_marginBottom="10dp"
+            android:src="@drawable/left_arrow"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_marginStart="10dp"
+            android:layout_toRightOf="@+id/Addsummarydetails_back"
+            android:layout_marginEnd="10dp"
+            android:layout_marginBottom="13dp"
+            android:fontFamily="@font/mulish_bold"
+            android:text="Add Professional Summary"
+            android:textColor="@color/white"
+            android:textSize="14dp"/>
+
+    </RelativeLayout>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_below="@+id/primarydetailssdetails"
+        android:layout_height="match_parent">
+
+        <RelativeLayout
+            android:id="@+id/relative_Rll"
+            android:layout_width="match_parent"
+            android:layout_marginTop="20dp"
+            android:layout_height="match_parent">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginTop="10dp">
+
+                <TextView
+                    android:id="@+id/firstname"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Summary of Qualifications"
+                    android:fontFamily="@font/mulish_bold"
+                    android:textColor="@color/icongrey"
+                    android:layout_marginStart="10dp"
+                    android:textSize="12dp"/>
+
+                <RelativeLayout
+                    android:id="@+id/primaryProfRelative"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="10dp"
+                    android:layout_below="@+id/firstname"
+                    android:layout_marginTop="5dp"
+                    android:layout_marginEnd="10dp">
+
+                    <EditText
+                        android:id="@+id/addsummaryqualificationtext_Tv"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:layout_marginStart="0dp"
+                        android:hint="-None-"
+                        android:digits="abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ "
+                        android:fontFamily="@font/mulish_medium"
+                        android:inputType="text"
+                        android:singleLine="true"
+                        android:maxLength="40"
+                        android:textColorHint="@color/icongrey"
+                        android:background="@drawable/layout_border_filled"
+                        android:textColor="@color/hrmstext"
+                        android:padding="15dp"
+                        android:textSize="14sp"/>
+
+                </RelativeLayout>
+
+
+                <TextView
+                    android:id="@+id/lastname"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Key Skills"
+                    android:fontFamily="@font/mulish_bold"
+                    android:layout_below="@+id/primaryProfRelative"
+                    android:textColor="@color/icongrey"
+                    android:layout_marginStart="10dp"
+                    android:layout_marginTop="10dp"
+                    android:textSize="12dp"/>
+
+                <RelativeLayout
+                    android:id="@+id/lastnameProfRelative"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="10dp"
+                    android:layout_below="@+id/lastname"
+                    android:layout_marginTop="5dp"
+                    android:layout_marginEnd="10dp">
+
+                    <EditText
+                        android:id="@+id/addkeyskillstext_Tv"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:layout_marginStart="0dp"
+                        android:hint="-None-"
+                        android:fontFamily="@font/mulish_medium"
+                        android:inputType="text"
+                        android:digits="abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ "
+                        android:singleLine="true"
+                        android:maxLength="100"
+                        android:textColorHint="@color/icongrey"
+                        android:background="@drawable/layout_border_filled"
+                        android:padding="15dp"
+                        android:textColor="@color/hrmstext"
+                        android:textSize="14sp"/>
+
+                </RelativeLayout>
+
+
+                <TextView
+                    android:id="@+id/empid"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Career Objective"
+                    android:fontFamily="@font/mulish_bold"
+                    android:layout_below="@+id/lastnameProfRelative"
+                    android:textColor="@color/icongrey"
+                    android:layout_marginStart="10dp"
+                    android:layout_marginTop="10dp"
+                    android:textSize="12dp"/>
+
+                <RelativeLayout
+                    android:id="@+id/empidProfRelative"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="10dp"
+                    android:layout_below="@+id/empid"
+                    android:layout_marginTop="5dp"
+                    android:layout_marginEnd="10dp">
+
+                    <EditText
+                        android:id="@+id/addcareertext_Tv"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:layout_marginStart="0dp"
+                        android:hint="-None-"
+                        android:fontFamily="@font/mulish_medium"
+                        android:inputType="text"
+                        android:singleLine="true"
+                        android:maxLength="50"
+                        android:digits="abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ "
+                        android:textColorHint="@color/icongrey"
+                        android:background="@drawable/layout_border_filled"
+                        android:padding="15dp"
+                        android:textColor="@color/hrmstext"
+                        android:textSize="14sp"/>
+
+                </RelativeLayout>
+
+
+                <TextView
+                    android:id="@+id/dob"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Highlights of Achievements"
+                    android:fontFamily="@font/mulish_bold"
+                    android:layout_below="@+id/empidProfRelative"
+                    android:textColor="@color/icongrey"
+                    android:layout_marginStart="10dp"
+                    android:layout_marginTop="10dp"
+                    android:textSize="12dp"/>
+
+                <RelativeLayout
+                    android:id="@+id/dobProfRelative"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="10dp"
+                    android:layout_below="@+id/dob"
+                    android:layout_marginTop="5dp"
+                    android:layout_marginEnd="10dp">
+
+                    <EditText
+                        android:id="@+id/addacheivementtext_Tv"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:layout_marginStart="0dp"
+                        android:hint="-None-"
+                        android:fontFamily="@font/mulish_medium"
+                        android:inputType="text"
+                        android:singleLine="true"
+                        android:maxLength="100"
+                        android:digits="abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ "
+                        android:textColorHint="@color/icongrey"
+                        android:background="@drawable/layout_border_filled"
+                        android:padding="15dp"
+                        android:textColor="@color/hrmstext"
+                        android:textSize="14sp"/>
+                </RelativeLayout>
+                <Button
+                    android:id="@+id/addsummaryAdd"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Submit"
+                    android:layout_marginEnd="20dp"
+                    android:textColor="@color/white"
+                    android:layout_below="@+id/dobProfRelative"
+                    android:layout_marginStart="20dp"
+                    android:layout_marginTop="80dp"
+                    android:layout_alignParentBottom="true"/>
+            </RelativeLayout>
+        </RelativeLayout>
+
+    </ScrollView>
+    <ProgressBar
+        android:id="@+id/progressBar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:visibility="gone" />
+</RelativeLayout>

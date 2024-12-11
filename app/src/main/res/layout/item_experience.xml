@@ -1,0 +1,345 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:background="@color/hrmsbackgroundcolor"
+    android:layout_height="wrap_content">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <RelativeLayout
+                android:id="@+id/expernencedetails"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="2dp">
+
+
+                <RelativeLayout
+                    android:id="@+id/primaryProfRelative"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="10dp"
+                    android:layout_marginTop="2dp"
+                    android:layout_marginEnd="10dp"
+                    android:background="@drawable/layout_border_filled"
+                    android:padding="15dp">
+
+                    <TextView
+                        android:id="@+id/primarytext_Tv"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:layout_marginStart="10dp"
+                        android:text="Experience 1"
+                        android:fontFamily="@font/mulish_semibold"
+                        android:textColor="@color/icongrey"
+                        android:textSize="14sp" />
+
+                    <TextView
+                        android:id="@+id/experienceArrow_Tv"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentEnd="true"
+                        android:layout_centerVertical="true"
+                        android:layout_marginStart="10dp"
+                        android:background="@drawable/ic_uparrow"
+                        android:backgroundTint="@color/hrmstext"
+                        android:textColor="@color/icongrey"
+                        android:textSize="14sp"
+                        android:visibility="gone" />
+
+                    <TextView
+                        android:id="@+id/experienceArrow_Tv2"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentEnd="true"
+                        android:layout_centerVertical="true"
+                        android:layout_marginStart="10dp"
+                        android:background="@drawable/ic_down_arrow"
+                        android:backgroundTint="@color/hrmstext"
+                        android:textColor="@color/icongrey"
+                        android:textSize="14sp" />
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:id="@+id/experience1"
+                    android:layout_width="match_parent"
+                    android:layout_below="@+id/primaryProfRelative"
+                    android:visibility="gone"
+                    android:layout_height="wrap_content">
+
+                    <RelativeLayout
+                        android:id="@+id/lastnameProfRelative"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="10dp"
+                        android:background="@drawable/layout_border_filled"
+                        android:layout_marginTop="0dp"
+                        android:layout_marginEnd="10dp"
+                        android:padding="15dp">
+
+                        <TextView
+                            android:id="@+id/jobtitle_Tv"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginStart="10dp"
+                            android:text="Job Title"
+                            android:fontFamily="@font/mulish_bold"
+                            android:textColor="@color/icongrey"
+                            android:textSize="14sp"/>
+
+                        <TextView
+                            android:id="@+id/experienceJob_Tv"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_below="@+id/jobtitle_Tv"
+                            android:layout_marginStart="10dp"
+                            android:layout_marginTop="5dp"
+                            android:text="-None-"
+                            android:fontFamily="@font/mulish_medium"
+                            android:textColor="@color/hrmstext"
+                            android:textSize="14sp"/>
+
+                    </RelativeLayout>
+
+
+                    <RelativeLayout
+                        android:id="@+id/empidProfRelative"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="10dp"
+                        android:layout_below="@+id/lastnameProfRelative"
+                        android:background="@drawable/layout_border_filled"
+                        android:layout_marginEnd="10dp"
+                        android:padding="10dp">
+
+                        <TextView
+                            android:id="@+id/companynametext_Tv"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginStart="10dp"
+                            android:text="Company Name"
+                            android:fontFamily="@font/mulish_bold"
+                            android:textColor="@color/icongrey"
+                            android:textSize="14sp"/>
+
+                        <TextView
+                            android:id="@+id/experienceCompany_Tv"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_below="@+id/companynametext_Tv"
+                            android:layout_marginStart="10dp"
+                            android:text="-None-"
+                            android:fontFamily="@font/mulish_medium"
+                            android:textColor="@color/hrmstext"
+                            android:textSize="14sp"/>
+                    </RelativeLayout>
+
+                    <RelativeLayout
+                        android:id="@+id/dobProfRelative"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="10dp"
+                        android:layout_below="@+id/empidProfRelative"
+                        android:background="@drawable/layout_border_filled"
+                        android:layout_marginTop="0dp"
+                        android:layout_marginEnd="10dp"
+                        android:padding="10dp">
+
+                        <TextView
+                            android:id="@+id/startdatetext_Tv"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:fontFamily="@font/mulish_bold"
+                            android:layout_marginStart="10dp"
+                            android:text="Start Date"
+                            android:textColor="@color/icongrey"
+                            android:textSize="14sp"/>
+
+                        <TextView
+                            android:id="@+id/experienceStartdatetext_Tv"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_below="@+id/startdatetext_Tv"
+                            android:layout_marginStart="10dp"
+                            android:text="DD-MM-YYYY"
+                            android:fontFamily="@font/mulish_medium"
+                            android:textColor="@color/hrmstext"
+                            android:textSize="14sp"/>
+
+                    </RelativeLayout>
+                    <RelativeLayout
+                        android:id="@+id/sdfgd"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="10dp"
+                        android:layout_below="@+id/dobProfRelative"
+                        android:background="@drawable/layout_border_filled"
+                        android:layout_marginTop="0dp"
+                        android:layout_marginEnd="10dp"
+                        android:padding="10dp">
+
+                        <TextView
+                            android:id="@+id/enddatetext_Tv"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginStart="10dp"
+                            android:text="End Date or Current"
+                            android:fontFamily="@font/mulish_bold"
+                            android:textColor="@color/icongrey"
+                            android:textSize="14sp"/>
+
+                        <TextView
+                            android:id="@+id/experienceenddate_Tv1"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginStart="10dp"
+                            android:text="DD-MM-YYYY"
+                            android:fontFamily="@font/mulish_medium"
+                            android:layout_below="@+id/enddatetext_Tv"
+                            android:textColor="@color/hrmstext"
+                            android:textSize="14sp"/>
+
+                    </RelativeLayout>
+
+                    <RelativeLayout
+                        android:id="@+id/rgfs"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="10dp"
+                        android:layout_below="@+id/sdfgd"
+                        android:background="@drawable/layout_border_filled"
+                        android:layout_marginTop="0dp"
+                        android:layout_marginEnd="10dp"
+                        android:padding="10dp">
+
+                        <TextView
+                            android:id="@+id/responsibilities_Tv"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginStart="10dp"
+                            android:text="Job Responsibilities"
+                            android:fontFamily="@font/mulish_bold"
+                            android:textColor="@color/icongrey"
+                            android:textSize="14sp"/>
+
+                        <TextView
+                            android:id="@+id/experinceresponsibilities1_Tv"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_below="@+id/responsibilities_Tv"
+                            android:layout_marginStart="10dp"
+                            android:text="-None-"
+                            android:fontFamily="@font/mulish_medium"
+                            android:textColor="@color/hrmstext"
+                            android:textSize="14sp"/>
+
+                    </RelativeLayout>
+                    <RelativeLayout
+                        android:id="@+id/responsibilitie_Tv"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="10dp"
+                        android:layout_below="@+id/rgfs"
+                        android:background="@drawable/layout_border_filled"
+                        android:layout_marginTop="0dp"
+                        android:layout_marginEnd="10dp"
+                        android:padding="10dp">
+
+                        <TextView
+                            android:id="@+id/acheivements_Tv"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginStart="10dp"
+                            android:text="Achievements"
+                            android:fontFamily="@font/mulish_bold"
+                            android:textColor="@color/icongrey"
+                            android:textSize="14sp"/>
+
+                        <TextView
+                            android:id="@+id/expereinceacheivements1_Tv"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_below="@+id/acheivements_Tv"
+                            android:layout_marginStart="10dp"
+                            android:text="-None-"
+                            android:fontFamily="@font/mulish_medium"
+                            android:textColor="@color/hrmstext"
+                            android:textSize="14sp"/>
+
+                    </RelativeLayout>
+
+                    <RelativeLayout
+                        android:id="@+id/dfdfd"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="10dp"
+                        android:layout_below="@+id/responsibilitie_Tv"
+                        android:background="@drawable/layout_border_filled"
+                        android:layout_marginTop="0dp"
+                        android:layout_marginEnd="10dp"
+                        android:padding="10dp">
+
+                        <TextView
+                            android:id="@+id/afsgsgadg"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginStart="10dp"
+                            android:text="Skills Utilized"
+                            android:fontFamily="@font/mulish_bold"
+                            android:textColor="@color/icongrey"
+                            android:textSize="14sp"/>
+
+                        <TextView
+                            android:id="@+id/experinceskills_Tv"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginStart="10dp"
+                            android:text="-None-"
+                            android:fontFamily="@font/mulish_medium"
+                            android:layout_below="@+id/afsgsgadg"
+                            android:textColor="@color/hrmstext"
+                            android:textSize="14sp"/>
+
+                    </RelativeLayout>
+
+                    <RelativeLayout
+                        android:id="@+id/dfdfggd"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="10dp"
+                        android:layout_below="@+id/dfdfd"
+                        android:background="@drawable/layout_border_filled"
+                        android:layout_marginTop="0dp"
+                        android:layout_marginEnd="10dp"
+                        android:padding="10dp">
+
+                        <TextView
+                            android:id="@+id/asfsgsgadg"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginStart="10dp"
+                            android:text="Experience Document"
+                            android:textColor="@color/icongrey"
+                            android:fontFamily="@font/mulish_bold"
+                            android:textSize="14sp"/>
+
+                        <ImageView
+                            android:id="@+id/experienceDocument"
+                            android:layout_width="80dp"
+                            android:layout_height="80dp"
+                            android:layout_marginStart="10dp"
+                            android:layout_below="@+id/asfsgsgadg"/>
+                    </RelativeLayout>
+                </RelativeLayout>
+            </RelativeLayout>
+        </RelativeLayout>
+    </ScrollView>
+
+
+</RelativeLayout>

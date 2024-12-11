@@ -1,0 +1,197 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/hrmsbackgroundcolor"
+    tools:context="com.example.fragments.PermanentAddressFragment">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_marginTop="20dp"
+        android:layout_height="wrap_content">
+
+        <RelativeLayout
+            android:id="@+id/currentaddressdetyaiol"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp">
+
+            <TextView
+                android:id="@+id/country"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Country"
+                android:fontFamily="@font/mulish_bold"
+                android:textColor="@color/icongrey"
+                android:layout_marginStart="20dp"
+                android:textSize="12dp"/>
+
+            <RelativeLayout
+                android:id="@+id/countryProfRelative"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="20dp"
+                android:layout_below="@+id/country"
+                android:background="@drawable/layout_border_filled"
+                android:layout_marginTop="5dp"
+                android:layout_marginEnd="20dp"
+                android:padding="15dp">
+
+                <TextView
+                    android:id="@+id/countrytext1_Tv"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginStart="10dp"
+                    android:text="-None-"
+                    android:fontFamily="@font/mulish_medium"
+                    android:textColor="@color/hrmstext"
+                    android:textSize="14sp"/>
+            </RelativeLayout>
+
+
+            <TextView
+                android:id="@+id/state"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="State/Province/Region"
+                android:layout_below="@+id/countryProfRelative"
+                android:textColor="@color/icongrey"
+                android:layout_marginStart="20dp"
+                android:fontFamily="@font/mulish_bold"
+                android:layout_marginTop="10dp"
+                android:textSize="12dp"/>
+
+            <RelativeLayout
+                android:id="@+id/stateProfRelative"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="20dp"
+                android:layout_below="@+id/state"
+                android:background="@drawable/layout_border_filled"
+                android:layout_marginTop="5dp"
+                android:layout_marginEnd="20dp"
+                android:padding="15dp">
+
+                <TextView
+                    android:id="@+id/statetext1_Tv"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginStart="10dp"
+                    android:text="-None-"
+                    android:fontFamily="@font/mulish_medium"
+                    android:textColor="@color/hrmstext"
+                    android:textSize="14sp"/>
+            </RelativeLayout>
+
+
+            <TextView
+                android:id="@+id/city"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="City"
+                android:fontFamily="@font/mulish_bold"
+                android:layout_below="@+id/stateProfRelative"
+                android:textColor="@color/icongrey"
+                android:layout_marginStart="20dp"
+                android:layout_marginTop="10dp"
+                android:textSize="12dp"/>
+
+            <RelativeLayout
+                android:id="@+id/cityProfRelative"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="20dp"
+                android:layout_below="@+id/city"
+                android:background="@drawable/layout_border_filled"
+                android:layout_marginTop="5dp"
+                android:layout_marginEnd="20dp"
+                android:padding="15dp">
+
+                <TextView
+                    android:id="@+id/citytext1_Tv"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginStart="10dp"
+                    android:text="-None-"
+                    android:fontFamily="@font/mulish_medium"
+                    android:textColor="@color/hrmstext"
+                    android:textSize="14sp"/>
+            </RelativeLayout>
+
+            <TextView
+                android:id="@+id/street"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Street Address"
+                android:fontFamily="@font/mulish_bold"
+                android:layout_below="@+id/cityProfRelative"
+                android:textColor="@color/icongrey"
+                android:layout_marginStart="20dp"
+                android:layout_marginTop="10dp"
+                android:textSize="12dp"/>
+
+            <RelativeLayout
+                android:id="@+id/streetProfRelative"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="20dp"
+                android:layout_below="@+id/street"
+                android:background="@drawable/layout_border_filled"
+                android:layout_marginTop="5dp"
+                android:layout_marginEnd="20dp"
+                android:padding="15dp">
+
+                <TextView
+                    android:id="@+id/streettext1_Tv"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginStart="10dp"
+                    android:text="-None-"
+                    android:fontFamily="@font/mulish_medium"
+                    android:textColor="@color/hrmstext"
+                    android:textSize="14sp"/>
+
+            </RelativeLayout>
+
+            <TextView
+                android:id="@+id/zipcode"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Postal/ZIP Code"
+                android:fontFamily="@font/mulish_bold"
+                android:layout_below="@+id/streetProfRelative"
+                android:textColor="@color/icongrey"
+                android:layout_marginStart="20dp"
+                android:layout_marginTop="10dp"
+                android:textSize="12dp"/>
+
+            <RelativeLayout
+                android:id="@+id/zipcode_Rv"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="20dp"
+                android:layout_below="@+id/zipcode"
+                android:background="@drawable/layout_border_filled"
+                android:layout_marginTop="5dp"
+                android:layout_marginEnd="20dp"
+                android:padding="15dp">
+
+                <TextView
+                    android:id="@+id/zipcode1_Tv"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginStart="10dp"
+                    android:text="-None-"
+                    android:fontFamily="@font/mulish_medium"
+                    android:textColor="@color/hrmstext"
+                    android:textSize="14sp"/>
+
+            </RelativeLayout>
+        </RelativeLayout>
+    </RelativeLayout>
+</FrameLayout>

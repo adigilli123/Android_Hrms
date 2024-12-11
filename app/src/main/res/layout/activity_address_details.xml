@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/hrmsbackgroundcolor"
+    tools:context=".AddressDetailsActivity">
+    <RelativeLayout
+        android:id="@+id/primarydetailssdetails"
+        android:layout_width="match_parent"
+        android:layout_height="90dp"
+        android:background="@color/hrmsheadercolor"
+        android:paddingTop="30dp">
+
+        <ImageView
+            android:id="@+id/addressdetails_back"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentBottom="true"
+            android:layout_marginStart="10dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginEnd="10dp"
+            android:layout_marginBottom="10dp"
+            android:src="@drawable/left_arrow"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_marginStart="10dp"
+            android:layout_toRightOf="@+id/addressdetails_back"
+            android:layout_marginEnd="10dp"
+            android:layout_marginBottom="13dp"
+            android:fontFamily="@font/mulish_bold"
+            android:text="Address"
+            android:textColor="@color/white"
+            android:textSize="14dp"/>
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:layout_below="@+id/primarydetailssdetails">
+
+        <com.google.android.material.tabs.TabLayout
+            android:id="@+id/tabLayout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:tabTextColor="@color/icongrey"
+            app:tabSelectedTextColor="@color/hrmstext"
+            android:background="@color/hrmsbackgroundcolor"
+            android:layout_alignParentTop="true"/>
+        <View
+            android:id="@+id/jhbdcvjhabsd"
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@color/hrmstext"
+            android:layout_below="@+id/tabLayout"/>
+
+        <androidx.viewpager2.widget.ViewPager2
+            android:id="@+id/viewPager"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_below="@id/tabLayout"/>
+
+    </RelativeLayout>
+</RelativeLayout>

@@ -1,0 +1,18 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <!-- Base application theme. -->
+    <style name="Theme.XYUG" parent="Theme.MaterialComponents.Light.NoActionBar">
+        <!-- Primary brand color. -->
+        <item name="colorPrimary">@color/app_darkblue</item>
+        <item name="colorPrimaryVariant">@color/app_lightblue</item>
+        <item name="colorOnPrimary">@color/app_darkblue</item>
+        <!-- Secondary brand color. -->
+        <item name="colorSecondary">@color/hrmstext</item>
+        <item name="colorSecondaryVariant">@color/hrmstext</item>
+        <item name="colorOnSecondary">@color/app_darkgreen</item>
+        <!-- Status bar color. -->
+        <item name="android:statusBarColor">@color/app_darkblue</item>
+        <item name="android:forceDarkAllowed" tools:ignore="NewApi">false</item>
+        <item name="android:windowTranslucentStatus">true</item>
+        <!-- Customize your theme here. -->
+    </style>
+</resources>

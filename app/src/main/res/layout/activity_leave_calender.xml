@@ -1,0 +1,244 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/hrmsbackgroundcolor"
+    tools:context="com.example.Leaves.LeaveCalenderActivity">
+
+    <RelativeLayout
+        android:id="@+id/primarydetailssdetails"
+        android:layout_width="match_parent"
+        android:layout_height="90dp"
+        android:background="@color/hrmsheadercolor"
+        android:paddingTop="30dp">
+
+        <ImageView
+            android:id="@+id/personaldetails_back"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentBottom="true"
+            android:layout_marginStart="10dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginEnd="10dp"
+            android:layout_marginBottom="10dp"
+            android:src="@drawable/left_arrow"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_toRightOf="@+id/personaldetails_back"
+            android:layout_marginStart="10dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginEnd="10dp"
+            android:layout_marginBottom="13dp"
+            android:fontFamily="@font/mulish_bold"
+            android:text="Apply Leave"
+            android:textColor="@color/white"
+            android:textSize="14dp"/>
+
+    </RelativeLayout>
+
+    <LinearLayout
+        android:id="@+id/select_from_to_dates"
+        android:layout_width="match_parent"
+        android:layout_height="80dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginRight="10dp"
+        android:layout_below="@+id/primarydetailssdetails"
+        android:orientation="horizontal"
+        android:weightSum="2"
+        android:visibility="visible">
+
+        <LinearLayout
+            android:id="@+id/linearselectstarts"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:fontFamily="@font/montserratregular"
+                android:text="START DATE"
+                android:textColor="@color/hrmstext"
+                android:textSize="12sp"/>
+
+            <TextView
+                android:id="@+id/applyStartDate"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:fontFamily="@font/montserratsemibold"
+                android:text=""
+                android:textColor="@color/hrmstext"
+                android:textSize="14sp"/>
+
+            <TextView
+                android:id="@+id/applyStartDayType"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="0dp"
+                android:fontFamily="@font/montserratregular"
+                android:text=""
+                android:textColor="@color/hrmstext"
+                android:textSize="12sp"/>
+        </LinearLayout>
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent">
+
+            <View
+                android:layout_width="1dp"
+                android:layout_height="match_parent"
+                android:layout_centerHorizontal="true"
+                android:background="#ffffff"/>
+
+            <RelativeLayout
+                android:layout_width="80dp"
+                android:layout_height="30dp"
+                android:layout_centerHorizontal="true"
+                android:layout_centerVertical="true"
+                android:background="@drawable/layout_border_filled">
+
+                <TextView
+                    android:id="@+id/applyLeaveCount"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerHorizontal="true"
+                    android:layout_centerVertical="true"
+                    android:fontFamily="@font/montserratregular"
+                    android:text=""
+                    android:textColor="@color/hrmstext"
+                    android:textSize="12sp"/>
+            </RelativeLayout>
+
+        </RelativeLayout>
+
+        <LinearLayout
+            android:id="@+id/linearselectends"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="end"
+                android:layout_marginTop="5dp"
+                android:fontFamily="@font/montserratregular"
+                android:text="END DATE"
+                android:textColor="@color/hrmstext"
+                android:textSize="12sp"/>
+
+            <TextView
+                android:id="@+id/applyLeaveEndDate"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="end"
+                android:layout_marginTop="5dp"
+                android:fontFamily="@font/montserratsemibold"
+                android:text=""
+                android:textColor="@color/hrmstext"
+                android:textSize="14sp"/>
+
+            <TextView
+                android:id="@+id/applyEndDayType"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="end"
+                android:layout_marginTop="0dp"
+                android:fontFamily="@font/montserratregular"
+                android:text=""
+                android:textColor="@color/hrmstext"
+                android:textSize="12sp"/>
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <CalendarView
+        android:id="@+id/calender"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/icongrey"
+        android:layout_below="@+id/select_from_to_dates"
+        android:layout_marginTop="-1dp" />
+
+    <HorizontalScrollView
+        android:id="@+id/horizobtalview"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/calender"
+        android:scrollbars="horizontal">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+            <TextView
+                android:id="@+id/fullday"
+                android:layout_width="70dp"
+                android:layout_height="40dp"
+                android:text="Full Day"
+                android:padding="7dp"
+                android:textSize="12dp"
+                android:textColor="@color/hrmstext"
+                android:gravity="center"
+                android:layout_marginStart="20dp"
+                android:background="@drawable/layout_border_filled"/>
+            <TextView
+                android:id="@+id/halfday"
+                android:layout_width="70dp"
+                android:layout_height="40dp"
+                android:text="Half Day"
+                android:padding="7dp"
+                android:textColor="@color/hrmstext"
+                android:textSize="12dp"
+                android:gravity="center"
+                android:layout_marginStart="20dp"
+                android:background="@drawable/layout_border_filled"/>
+            <TextView
+                android:id="@+id/firdthalf"
+                android:layout_width="130dp"
+                android:layout_height="50dp"
+                android:text="First Half"
+                android:padding="7dp"
+                android:gravity="center"
+                android:textSize="12dp"
+                android:layout_marginStart="20dp"
+                android:visibility="gone"
+                android:background="@drawable/layout_border_filled"/>
+            <TextView
+                android:id="@+id/secondhalf"
+                android:layout_width="120dp"
+                android:layout_height="50dp"
+                android:text="Second Half"
+                android:textSize="12dp"
+                android:visibility="gone"
+                android:gravity="center"
+                android:padding="7dp"
+                android:layout_marginStart="20dp"
+                android:background="@drawable/layout_border_filled"/>
+        </LinearLayout>
+    </HorizontalScrollView>
+
+    <Button
+        android:id="@+id/submitbtn"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="30dp"
+        android:layout_marginTop="30dp"
+        android:layout_marginEnd="30dp"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="30dp"
+        android:text="Submit"
+        android:textColor="@color/white" />
+</RelativeLayout>

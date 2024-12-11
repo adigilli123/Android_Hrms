@@ -1,0 +1,294 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/hrmsbackgroundcolor"
+    android:id="@+id/fragment_container2"
+    tools:context="com.example.fragments.OrganizationFragment">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:paddingBottom="10dp"
+        android:layout_height="wrap_content">
+
+    <RelativeLayout
+        android:id="@+id/empDirectorProfRelative"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="20dp"
+        android:background="@drawable/layout_border_filled"
+        android:layout_marginTop="20dp"
+        android:layout_marginEnd="20dp"
+        android:padding="10dp">
+
+        <ImageView
+            android:id="@+id/kycProfIv"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_marginTop="5dp"
+            android:background="@drawable/custom_round"
+            android:backgroundTint="@color/purple1"
+            android:padding="5dp"
+            android:src="@drawable/employeedirectory"/>
+
+        <TextView
+            android:id="@+id/kycProfiEt"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:layout_marginStart="20dp"
+            android:layout_toEndOf="@id/kycProfIv"
+            android:text="Employee Directory"
+            android:fontFamily="@font/mulish_bold"
+            android:textColor="@color/hrmstext"
+            android:textSize="14sp"/>
+
+        <TextView
+            android:id="@+id/empdrt_arrow"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="20dp"
+            android:layout_marginTop="16dp"
+            android:layout_alignParentEnd="true"
+            android:background="@drawable/ic_right_arrow"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/kycProfIv"
+            android:textSize="13dp"
+            android:fontFamily="@font/mulish_medium"
+            android:textColor="@color/icongrey"
+            android:layout_marginTop="10dp"
+            android:layout_marginStart="5dp"
+            android:text="All employees of your organization can be seen here"/>
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/announsmentProfRelative"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/layout_border_filled"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginEnd="20dp"
+        android:layout_below="@+id/empDirectorProfRelative"
+        android:padding="10dp">
+
+        <ImageView
+            android:id="@+id/announment_pfl"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_marginTop="5dp"
+            android:background="@drawable/custom_round"
+            android:backgroundTint="@color/pink1"
+            android:padding="5dp"
+            android:src="@drawable/annoucementicon"/>
+
+        <TextView
+            android:id="@+id/announment_Tv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+
+            android:layout_marginTop="16dp"
+            android:layout_marginLeft="20dp"
+            android:layout_toRightOf="@id/announment_pfl"
+            android:text="Announcements"
+            android:fontFamily="@font/mulish_bold"
+            android:textColor="@color/hrmstext"
+            android:textSize="14sp"/>
+
+        <TextView
+            android:id="@+id/announment_arr"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="16dp"
+            android:layout_alignParentEnd="true"
+            android:background="@drawable/ic_right_arrow"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/announment_pfl"
+            android:textSize="13dp"
+            android:fontFamily="@font/mulish_medium"
+            android:layout_marginTop="10dp"
+            android:layout_marginStart="5dp"
+            android:textColor="@color/icongrey"
+            android:text="All announcement of your organization can be seen here"/>
+
+    </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/birthdayProfRelative"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/layout_border_filled"
+            android:layout_marginStart="20dp"
+            android:layout_marginTop="20dp"
+            android:layout_marginEnd="20dp"
+            android:layout_below="@+id/announsmentProfRelative"
+            android:padding="10dp">
+
+            <ImageView
+                android:id="@+id/birthday_pfl"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:layout_marginTop="5dp"
+                android:background="@drawable/custom_round"
+                android:backgroundTint="@color/sky"
+                android:padding="5dp"
+                android:src="@drawable/birthdaycake"/>
+
+            <TextView
+                android:id="@+id/birthday_Tv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/mulish_bold"
+                android:layout_marginTop="16dp"
+                android:layout_marginLeft="20dp"
+                android:layout_toRightOf="@id/birthday_pfl"
+                android:text="Upcoming Birthdays"
+                android:textColor="@color/hrmstext"
+                android:textSize="14sp"/>
+
+            <TextView
+                android:id="@+id/birthday_arr"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20dp"
+                android:layout_marginTop="16dp"
+                android:layout_alignParentEnd="true"
+                android:background="@drawable/ic_right_arrow"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/birthday_pfl"
+                android:textSize="13dp"
+                android:fontFamily="@font/mulish_medium"
+                android:textColor="@color/icongrey"
+                android:layout_marginTop="10dp"
+                android:layout_marginStart="5dp"
+                android:text="All employees upcoming birthdays can be seen here"/>
+
+        </RelativeLayout>
+
+
+        <RelativeLayout
+            android:id="@+id/anniversaryProfRelative"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/layout_border_filled"
+            android:layout_marginStart="20dp"
+            android:layout_marginTop="20dp"
+            android:layout_marginEnd="20dp"
+            android:layout_below="@+id/birthdayProfRelative"
+            android:padding="10dp">
+
+            <ImageView
+                android:id="@+id/anniversary_pfl"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:layout_marginTop="5dp"
+                android:background="@drawable/custom_round"
+                android:backgroundTint="@color/litegreen"
+                android:padding="5dp"
+                android:src="@drawable/work_anniversary"/>
+
+            <TextView
+                android:id="@+id/anniversary_Tv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="16dp"
+                android:layout_marginLeft="20dp"
+                android:fontFamily="@font/mulish_bold"
+                android:layout_toRightOf="@id/anniversary_pfl"
+                android:text="Work Anniversaries"
+                android:textColor="@color/hrmstext"
+                android:textSize="14sp"/>
+
+            <TextView
+                android:id="@+id/anniversary_arr"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20dp"
+                android:layout_marginTop="16dp"
+                android:layout_alignParentEnd="true"
+                android:background="@drawable/ic_right_arrow"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/anniversary_pfl"
+                android:textSize="13dp"
+                android:fontFamily="@font/mulish_medium"
+                android:textColor="@color/icongrey"
+                android:layout_marginStart="5dp"
+                android:layout_marginTop="10dp"
+                android:text="All employees work anniversaries can be seen here"/>
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/newempProfRelative"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/layout_border_filled"
+            android:layout_marginStart="20dp"
+            android:layout_marginTop="20dp"
+            android:layout_marginEnd="20dp"
+            android:layout_below="@+id/anniversaryProfRelative"
+            android:padding="10dp">
+
+            <ImageView
+                android:id="@+id/newwmp_pfl"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:layout_marginTop="5dp"
+                android:background="@drawable/custom_round"
+                android:backgroundTint="@color/orange1"
+                android:padding="5dp"
+                android:src="@drawable/new_employee"/>
+
+            <TextView
+                android:id="@+id/newemp_Tv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="16dp"
+                android:layout_marginLeft="20dp"
+                android:fontFamily="@font/mulish_bold"
+                android:layout_toRightOf="@id/newwmp_pfl"
+                android:text="New Employees"
+                android:textColor="@color/hrmstext"
+                android:textSize="14sp"/>
+
+            <TextView
+                android:id="@+id/newemp_arr"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20dp"
+                android:layout_marginTop="16dp"
+                android:layout_alignParentEnd="true"
+                android:background="@drawable/ic_right_arrow"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/newwmp_pfl"
+                android:textSize="13dp"
+                android:fontFamily="@font/mulish_medium"
+                android:textColor="@color/icongrey"
+                android:layout_marginTop="10dp"
+                android:layout_marginStart="5dp"
+                android:text="All new employees can be seen here"/>
+
+        </RelativeLayout>
+    </RelativeLayout>
+    </ScrollView>
+</FrameLayout>

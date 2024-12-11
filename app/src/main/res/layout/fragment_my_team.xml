@@ -1,0 +1,175 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:background="@color/hrmsbackgroundcolor"
+    android:layout_height="match_parent"
+    tools:context="com.example.fragments.MyTeamFragment">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+    <RelativeLayout
+        android:id="@+id/primaryProfRelative"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="20dp"
+        android:background="@drawable/layout_border_filled"
+        android:layout_marginTop="20dp"
+        android:layout_marginEnd="20dp"
+        android:padding="15dp">
+
+        <TextView
+            android:id="@+id/onleaveweekt1_Tv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="10dp"
+            android:text="On leave on week"
+            android:fontFamily="@font/mulish_bold"
+            android:textColor="@color/hrmstext"
+            android:textSize="14sp"/>
+
+        <TextView
+            android:id="@+id/onleaveweekt_Tv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="10dp"
+            android:layout_marginTop="5dp"
+            android:text="-None-"
+            android:fontFamily="@font/mulish_medium"
+            android:layout_below="@+id/onleaveweekt1_Tv"
+            android:textColor="@color/icongrey"
+            android:textSize="14sp"/>
+
+        <TextView
+            android:id="@+id/primary_arrow"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_alignParentEnd="true"
+            android:background="@drawable/ic_right_arrow"/>
+
+    </RelativeLayout>
+
+
+    <RelativeLayout
+        android:id="@+id/contactProfRelative"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="20dp"
+        android:layout_below="@+id/primaryProfRelative"
+        android:background="@drawable/layout_border_filled"
+        android:layout_marginTop="10dp"
+        android:layout_marginEnd="20dp"
+        android:padding="15dp">
+
+        <TextView
+            android:id="@+id/nextweek_Tv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="10dp"
+            android:text="On leave next week"
+            android:fontFamily="@font/mulish_bold"
+            android:textColor="@color/hrmstext"
+            android:textSize="14sp"/>
+
+        <TextView
+            android:id="@+id/contacttext_Tv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="10dp"
+            android:layout_marginTop="5dp"
+            android:layout_below="@+id/nextweek_Tv"
+            android:text="-None-"
+            android:fontFamily="@font/mulish_medium"
+            android:textColor="@color/icongrey"
+            android:textSize="14sp"/>
+
+        <TextView
+            android:id="@+id/contact_arrow"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_alignParentEnd="true"
+            android:background="@drawable/ic_right_arrow"/>
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/peersProfRelative"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="20dp"
+        android:layout_below="@+id/contactProfRelative"
+        android:background="@drawable/layout_border_filled"
+        android:layout_marginTop="10dp"
+        android:layout_marginEnd="20dp"
+        android:padding="15dp">
+
+        <ImageView
+            android:id="@+id/peerimag"
+            android:layout_width="35dp"
+            android:layout_height="35dp"
+            android:layout_marginTop="5dp"
+            android:layout_alignParentStart="true"
+            android:layout_centerHorizontal="true"
+            android:background="@drawable/custom_round"
+            android:backgroundTint="@color/orangee"
+            android:padding="5dp"
+            android:src="@drawable/employeedirectory"/>
+
+        <TextView
+            android:id="@+id/peers_Tv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginStart="15dp"
+            android:text="Peers"
+            android:fontFamily="@font/mulish_bold"
+            android:layout_toRightOf="@+id/peerimag"
+            android:textColor="@color/hrmstext"
+            android:textSize="14sp"/>
+
+        <TextView
+            android:id="@+id/address_arrow"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_alignParentEnd="true"
+            android:background="@drawable/ic_right_arrow"/>
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/photosProfRelative"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="20dp"
+        android:layout_below="@+id/peersProfRelative"
+        android:background="@drawable/layout_border_filled"
+        android:layout_marginTop="10dp"
+        android:layout_marginEnd="20dp"
+        android:padding="15dp">
+
+        <ImageView
+            android:id="@+id/allempimag"
+            android:layout_width="250dp"
+            android:layout_height="50dp"
+            android:layout_marginTop="5dp"
+            android:layout_alignParentStart="true"
+            android:backgroundTint="@color/purple1"
+            android:padding="5dp"
+            android:src="@drawable/allempimag"/>
+
+        <TextView
+            android:id="@+id/more_Tv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:text="More"
+            android:layout_toRightOf="@+id/allempimag"
+            android:fontFamily="@font/mulish_regular"
+            android:textColor="@color/hrmstext"
+            android:textSize="16sp"/>
+    </RelativeLayout>
+    </RelativeLayout>
+</FrameLayout>
+

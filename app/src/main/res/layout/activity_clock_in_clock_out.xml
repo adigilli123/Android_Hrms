@@ -1,0 +1,216 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/hrmsbackgroundcolor"
+    tools:context=".ClockInClockOutActivity">
+
+    <RelativeLayout
+        android:id="@+id/headerAllemp"
+        android:layout_width="match_parent"
+        android:layout_height="90dp"
+        android:background="@drawable/gradient_background"
+        android:paddingTop="30dp">
+
+        <ImageView
+            android:id="@+id/allclockin_back"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentBottom="true"
+            android:layout_marginStart="10dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginEnd="10dp"
+            android:layout_marginBottom="10dp"
+            android:src="@drawable/left_arrow"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginStart="10dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginEnd="10dp"
+            android:layout_marginBottom="10dp"
+            android:fontFamily="@font/montserratsemibold"
+            android:text="Attendence"
+            android:textColor="@color/white"
+            android:textSize="14dp"/>
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/jhbdvasfjabsdjv"
+        android:layout_width="match_parent"
+        android:layout_below="@+id/headerAllemp"
+       android:paddingBottom="15dp"
+        android:background="@color/hrmscornorbackgroundcolor"
+        android:layout_height="wrap_content">
+
+        <RelativeLayout
+            android:id="@+id/cloclkktext"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+        <TextView
+            android:id="@+id/clockText2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="12dp"
+            android:textColor="@color/hrmstext"
+            android:fontFamily="@font/mulish_bold"
+            android:layout_marginStart="23dp"
+            android:layout_marginTop="20dp"
+            android:text="Swife clock in to mark your attendance here"/>
+
+            <TextView
+                android:id="@+id/clockText3"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="12dp"
+                android:visibility="gone"
+                android:textColor="@color/hrmstext"
+                android:fontFamily="@font/mulish_bold"
+                android:layout_marginStart="23dp"
+                android:layout_marginTop="20dp"
+                android:text="You clockIn in at this time : "/>
+
+            <TextView
+                android:id="@+id/clockText4"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="12dp"
+                android:textColor="@color/hrmstext"
+                android:visibility="gone"
+                android:fontFamily="@font/mulish_bold"
+                android:layout_marginStart="23dp"
+                android:layout_marginTop="20dp"
+                android:text="You clockOut in at this time : "/>
+    <TextView
+        android:id="@+id/clockText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="12dp"
+        android:visibility="gone"
+        android:textColor="@color/hrmstext"
+        android:fontFamily="@font/mulish_bold"
+        android:layout_marginStart="23dp"
+        android:layout_marginTop="20dp"
+        android:text="You clocked in today at 10 AM"/>
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/ksbdkjjab"
+            android:layout_width="match_parent"
+            android:layout_below="@+id/cloclkktext"
+            android:padding="3dp"
+           android:layout_centerHorizontal="true"
+            android:gravity="center"
+            android:layout_marginTop="5dp"
+            android:layout_height="wrap_content">
+
+            <Switch
+                android:id="@+id/labeledSwitch"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:thumb="@drawable/thumb_switch"
+                android:track="@drawable/track_switch"
+                android:showText="true"
+                android:checked="false"
+                android:textOff="Clock In"
+                android:textOn="Clock Out"/>
+        </RelativeLayout>
+
+        <TextView
+            android:id="@+id/shiftPeriod_Tv"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="10dp"
+            android:layout_below="@+id/ksbdkjjab"
+            android:textColor="@color/icongrey"
+            android:fontFamily="@font/mulish_regular"
+            android:layout_marginStart="23dp"
+            android:layout_marginTop="3dp"
+            android:text="Please note that your shift is 9 hours long"/>
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_below="@+id/jhbdvasfjabsdjv"
+        android:layout_width="match_parent"
+        android:layout_marginTop="20dp"
+        android:layout_height="wrap_content">
+        <ImageView
+            android:id="@+id/holiday"
+            android:layout_width="match_parent"
+            android:layout_height="200dp"
+            android:src="@drawable/holiday"
+            android:layout_marginTop="10dp"
+            android:visibility="gone"/>
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/attendancehistoryRecycler"
+            android:layout_width="match_parent"
+            android:layout_below="@+id/holiday"
+            android:layout_marginTop="20dp"
+            android:layout_height="wrap_content"/>
+    </RelativeLayout>
+
+
+<!--    <RelativeLayout-->
+<!--        android:layout_width="match_parent"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:layout_marginTop="20dp"-->
+<!--        android:layout_below="@+id/ksbdkjjab">-->
+
+<!--        <com.google.android.material.materialswitch.MaterialSwitch-->
+<!--            android:id="@+id/materialswitch"-->
+<!--            android:layout_width="wrap_content"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            android:textOn="Clock Out"-->
+<!--            android:textOff="Clock In"-->
+<!--            android:thumb="@drawable/thumb_switch"-->
+<!--            app:track="@drawable/track_switch"-->
+<!--            android:checked="false"-->
+<!--            android:layout_centerHorizontal="true"-->
+<!--            android:layout_marginStart="20dp"-->
+<!--            android:clickable="true"-->
+<!--            android:textSize="15dp"-->
+<!--            android:focusable="true"-->
+<!--            app:showText="true"/>-->
+<!--    </RelativeLayout>-->
+
+<!--    <RelativeLayout-->
+<!--        android:id="@+id/clockinclockout_Rl"-->
+<!--        android:layout_width="wrap_content"-->
+<!--        android:layout_below="@+id/jhbdvasfjabsdjv"-->
+<!--        android:layout_marginStart="20dp"-->
+<!--        android:padding="10dp"-->
+<!--        android:background="@drawable/clockinclockout_background"-->
+<!--        android:layout_marginTop="10dp"-->
+<!--        android:layout_marginEnd="20dp"-->
+<!--        android:layout_height="40dp">-->
+
+<!--        <TextView-->
+<!--            android:id="@+id/startend"-->
+<!--            android:layout_width="wrap_content"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            android:text="Clock In"-->
+<!--            android:textColor="@color/hrmstext"-->
+<!--            android:fontFamily="@font/mulish_medium"-->
+<!--            android:layout_centerVertical="true"-->
+<!--            android:textSize="16sp"/>-->
+
+<!--        <Switch-->
+<!--            android:id="@+id/clockSwitch"-->
+<!--            android:layout_width="wrap_content"-->
+<!--            android:layout_marginStart="10dp"-->
+<!--            android:layout_centerVertical="true"-->
+<!--            android:textOn="ON"-->
+<!--            android:textOff="OFF"-->
+<!--            android:layout_alignParentEnd="true"-->
+<!--            android:layout_marginEnd="10dp"-->
+<!--            android:layout_height="wrap_content"/>-->
+<!--    </RelativeLayout>-->
+</RelativeLayout>

@@ -1,0 +1,204 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/hrmsbackgroundcolor"
+    tools:context=".OtpActivity">
+
+    <RelativeLayout
+        android:id="@+id/otpbackbtn"
+        android:layout_width="match_parent"
+        android:layout_height="90dp"
+        android:background="@color/hrmsheadercolor"
+        android:paddingTop="30dp">
+
+        <ImageView
+            android:id="@+id/addressdetails_back"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentBottom="true"
+            android:layout_marginStart="10dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginEnd="10dp"
+            android:layout_marginBottom="10dp"
+            android:src="@drawable/left_arrow"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_marginStart="10dp"
+            android:layout_toRightOf="@+id/addressdetails_back"
+            android:layout_marginEnd="10dp"
+            android:layout_marginBottom="13dp"
+            android:fontFamily="@font/mulish_bold"
+            android:text="OTP Verification"
+            android:textColor="@color/white"
+            android:textSize="14dp"/>
+
+    </RelativeLayout>
+
+    <LinearLayout
+        android:id="@+id/linearOtpOne"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/otpbackbtn"
+        android:layout_marginTop="30dp"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="20dp"
+            android:text="Enter OTP"
+            android:textColor="@color/hrmstext"
+            android:textSize="24sp"
+         android:fontFamily="@font/mulish_bold"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/linearOtpTwo"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/linearOtpOne"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/otpNumberTv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="20dp"
+            android:maxLines="2"
+            android:text=""
+            android:textColor="@color/icongrey"
+            android:textSize="14sp"/>
+
+    </LinearLayout>
+
+    <com.chaos.view.PinView
+        android:id="@+id/pinView"
+        style="@style/PinWidget.PinView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/linearOtpTwo"
+        android:layout_marginTop="30dp"
+        android:layout_marginEnd="20dp"
+        android:layout_marginBottom="20dp"
+        android:cursorVisible="true"
+        android:inputType="number"
+        android:textAlignment="center"
+        android:textSize="18sp"
+        android:textColor="@color/hrmstext"
+        android:layout_centerHorizontal="true"
+        android:textStyle="bold"
+        app:cursorColor="@color/hrmstext"
+        app:lineColor="@color/hrmstext"
+        app:cursorWidth="2dp"
+        app:itemCount="6"
+        app:itemHeight="48dp"
+        app:itemRadius="4dp"
+        app:itemSpacing="7dp"
+        app:itemWidth="48dp"
+        app:lineWidth="1dp"
+        app:viewType="rectangle">
+    </com.chaos.view.PinView>
+
+    <TextView
+        android:id="@+id/otpErrorTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@id/pinView"
+        android:textColor="@android:color/holo_red_dark"
+        android:visibility="gone"
+        android:padding="5dp"
+        android:text="Invalid OTP"
+        android:textSize="14sp"/>
+
+    <RelativeLayout
+        android:id="@+id/otpRelatveOne"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/pinView">
+
+        <LinearLayout
+            android:id="@+id/linearOtpThree"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="24dp"
+            android:layout_marginTop="50dp"
+            android:layout_marginRight="24dp"
+            android:gravity="center"
+            android:orientation="horizontal"
+            android:visibility="invisible">
+
+            <TextView
+                android:id="@+id/wrngCodeTv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="wrong otp please try agian later"
+                android:textColor="@color/app_red"
+                android:textSize="14sp"
+                android:textStyle="bold"
+                android:visibility="visible"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/linearOtpThree"
+            android:layout_marginTop="50dp"
+            android:gravity="center"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/timeOtpTv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Send again"
+                android:fontFamily="@font/mulish_medium"
+                android:textColor="@color/icongrey"
+                android:textSize="14sp"
+                android:visibility="visible"/>
+
+            <TextView
+                android:id="@+id/resendtimeOtpTv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/receive"
+                android:textColor="@color/icongrey"
+                android:textSize="14sp"
+                android:visibility="gone"/>
+
+        </LinearLayout>
+    </RelativeLayout>
+
+    <Button
+        android:id="@+id/otpBtn"
+        android:layout_width="match_parent"
+        android:layout_height="44dp"
+        android:layout_below="@+id/otpRelatveOne"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginEnd="20dp"
+        android:layout_marginBottom="20dp"
+        android:background="@drawable/layout_border_filled"
+        android:text="Verify"
+        android:fontFamily="@font/mulish_bold"
+        android:textAllCaps="false"
+        android:textColor="@color/white"
+        android:textSize="16dp"
+        android:textStyle="bold"/>
+
+    <ProgressBar
+        android:id="@+id/progressBar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:visibility="gone"/>
+
+</RelativeLayout>

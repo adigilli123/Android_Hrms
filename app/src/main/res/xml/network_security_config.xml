@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<network-security-config>
+    <domain-config cleartextTrafficPermitted="true">
+        <!-- Allow cleartext traffic for xyug.in -->
+        <domain includeSubdomains="true">xyug.in</domain>
+        <trust-anchors>
+            <certificates src="system" />
+        </trust-anchors>
+    </domain-config>
+
+    <domain-config cleartextTrafficPermitted="true">
+        <domain includeSubdomains="false">192.168.168.164</domain>
+    </domain-config>
+</network-security-config>
+
+
+<!--<network-security-config>-->
+<!--<domain-config cleartextTrafficPermitted="true">-->
+<!--    <domain includeSubdomains="true">192.168.168.164</domain>-->
+<!--</domain-config>-->
+<!--</network-security-config>-->
+
+
+    <!--<?xml version="1.0" encoding="utf-8"?>-->
+    <!--<network-security-config>-->
+    <!--    <domain-config cleartextTrafficPermitted="true">-->
+    <!--        <domain includeSubdomains="true">xyug.in</domain>-->
+    <!--        <trust-anchors>-->
+    <!--            <certificates src="system" />-->
+    <!--            &lt;!&ndash; If using a custom CA certificate, include it here &ndash;&gt;-->
+    <!--            &lt;!&ndash; <certificates src="@raw/my_custom_ca" /> &ndash;&gt;-->
+    <!--        </trust-anchors>-->
+    <!--    </domain-config>-->
+    <!--</network-security-config>-->
+
+

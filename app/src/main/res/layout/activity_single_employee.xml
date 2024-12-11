@@ -1,0 +1,302 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/hrmsbackgroundcolor"
+    tools:context=".SingleEmployeeActivity">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <ImageView
+            android:id="@+id/singleemp_back"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="20dp"
+            android:layout_marginTop="40dp"
+            android:layout_marginEnd="20dp"
+            android:layout_marginBottom="20dp"
+            android:src="@drawable/left_arrow"/>
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/cardviewsinglemp"
+            android:layout_width="40dp"
+            android:layout_height="30dp"
+            android:layout_alignParentEnd="true"
+            android:layout_marginTop="40dp"
+            android:layout_marginEnd="20dp"
+            android:backgroundTint="@color/bright_green"
+            app:cardCornerRadius="20dp">
+            <TextView
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:layout_gravity="center"
+                android:textColor="@color/hrmstext"
+                android:paddingStart="4dp"
+                android:paddingTop="1dp"
+                android:textStyle="bold"
+                android:textSize="12dp"
+                android:text="IN"/>
+        </androidx.cardview.widget.CardView>
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/cardview"
+            android:layout_width="70dp"
+            android:layout_centerHorizontal="true"
+            android:layout_height="70dp"
+            android:layout_marginTop="20dp"
+            android:layout_below="@+id/singleemp_back"
+            app:cardCornerRadius="1000dp">
+
+            <ImageView
+                android:id="@+id/singleEmpImage"
+                android:layout_width="70dp"
+                android:layout_height="70dp"
+                android:scaleType="fitXY"
+                android:src="@drawable/ic_profile"
+                android:contentDescription="profile_image"
+                android:layout_gravity="start"
+                android:layout_centerVertical="true" />
+        </androidx.cardview.widget.CardView>
+
+        <TextView
+            android:id="@+id/singleemp_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/cardview"
+            android:text="-None-"
+            android:fontFamily="@font/mulish_semibold"
+            android:textSize="22dp"
+            android:layout_marginTop="15dp"
+            android:textColor="@color/hrmstext"
+            android:layout_centerHorizontal="true"/>
+
+        <TextView
+            android:id="@+id/singleemp_designation"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/singleemp_name"
+            android:text="-None-"
+            android:textSize="14dp"
+            android:fontFamily="@font/mulish_medium"
+            android:layout_marginTop="3dp"
+            android:textColor="@color/icongrey"
+            android:layout_centerHorizontal="true"/>
+
+        <LinearLayout
+            android:id="@+id/singlejhehjej"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:weightSum="2"
+            android:layout_below="@+id/singleemp_designation"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="20dp"
+            android:gravity="center"
+            android:orientation="horizontal">
+<!--            <LinearLayout-->
+<!--                android:layout_width="wrap_content"-->
+<!--                android:layout_height="wrap_content"-->
+<!--                android:gravity="end"-->
+<!--                android:layout_weight="1">-->
+<!--                <ImageView-->
+<!--                    android:id="@+id/call_singleemp"-->
+<!--                    android:layout_width="40dp"-->
+<!--                    android:layout_height="40dp"-->
+<!--                    android:background="@drawable/custom_round"-->
+<!--                    android:backgroundTint="@color/litepruple"-->
+<!--                    android:padding="6dp"-->
+<!--                    android:src="@drawable/ic_phone_calling"/>-->
+<!--            </LinearLayout>-->
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="end"
+                android:layout_marginEnd="30dp"
+                android:layout_weight="1">
+                <ImageView
+                    android:id="@+id/mail_singleemp"
+                    android:layout_width="40dp"
+                    android:layout_height="40dp"
+                    android:background="@drawable/custom_round"
+                    android:backgroundTint="@color/greenable"
+                    android:padding="6dp"
+                    android:src="@drawable/emailicon"/>
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+
+                android:layout_weight="1">
+                <ImageView
+                    android:id="@+id/message_singleemp"
+                    android:layout_width="40dp"
+                    android:layout_height="40dp"
+                    android:background="@drawable/custom_round"
+                    android:backgroundTint="@color/blueee"
+                    android:padding="6dp"
+                    android:src="@drawable/message"/>
+            </LinearLayout>
+        </LinearLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_below="@+id/singlejhehjej"
+            android:background="@color/hrmsbackgroundcolor"
+            android:layout_marginTop="30dp"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:id="@+id/summary"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Summary"
+                android:textColor="@color/hrmstext"
+                android:textSize="14dp"
+                android:fontFamily="@font/mulish_semibold"
+                android:layout_marginStart="20dp"
+                android:textStyle="bold"
+                android:layout_marginTop="20dp"/>
+            <TextView
+                android:id="@+id/line"
+                android:layout_width="50dp"
+                android:layout_height="3dp"
+                android:layout_below="@+id/summary"
+                android:background="@color/bluetext"
+                android:layout_marginStart="23dp"/>
+
+            <TextView
+                android:id="@+id/bigline"
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_below="@+id/line"
+                android:background="@color/hrmsbordercolor"
+                android:layout_marginStart="23dp"/>
+
+
+
+            <RelativeLayout
+                android:id="@+id/managerdetails"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/layout_border_filled"
+                android:layout_below="@+id/bigline"
+                android:layout_marginStart="20dp"
+                android:layout_marginEnd="20dp"
+                android:layout_marginTop="10dp">
+
+                <TextView
+                    android:id="@+id/manager"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Reporting Head"
+                    android:textStyle="bold"
+                    android:fontFamily="@font/mulish_bold"
+                    android:textSize="15dp"
+                    android:textColor="@color/hrmstext"
+                    android:layout_marginStart="20dp"
+                    android:layout_marginTop="10dp"/>
+
+
+                <RelativeLayout
+                    android:id="@+id/hearder_profile"
+                    android:layout_width="match_parent"
+                    android:layout_below="@+id/manager"
+                    android:layout_height="wrap_content">
+
+                    <androidx.cardview.widget.CardView
+                        android:id="@+id/cardview3"
+                        android:layout_width="40dp"
+                        android:layout_centerVertical="true"
+                        android:layout_height="40dp"
+                        android:layout_marginTop="30dp"
+                        android:layout_marginStart="20dp"
+                        app:cardCornerRadius="1000dp">
+
+                        <ImageView
+                            android:id="@+id/managerpicture"
+                            android:layout_width="40dp"
+                            android:layout_height="40dp"
+                            android:src="@drawable/ic_profile"
+                            android:scaleType="fitXY"
+                            android:contentDescription="profile_image"
+                            android:layout_gravity="start"
+                            android:layout_centerVertical="true"/>
+                    </androidx.cardview.widget.CardView>
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_centerInParent="true"
+                        android:layout_toRightOf="@+id/cardview3">
+
+                        <TextView
+                            android:id="@+id/managername"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginStart="10sp"
+                            android:fontFamily="@font/mulish_semibold"
+                            android:text="-None-"
+                            android:textColor="@color/hrmstext"
+                            android:textSize="14sp"/>
+
+                        <TextView
+                            android:id="@+id/managerDesignation"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_below="@+id/managername"
+                            android:layout_marginStart="10sp"
+                            android:layout_marginTop="5dp"
+                            android:fontFamily="@font/mulish_medium"
+                            android:text="-None-"
+                            android:textColor="@color/hrmstext"
+                            android:textSize="12sp"/>
+                    </RelativeLayout>
+                </RelativeLayout>
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_below="@+id/managerdetails"
+                android:background="@drawable/layout_border_filled"
+                android:layout_marginTop="10dp"
+                android:paddingBottom="10dp"
+                android:layout_marginStart="20dp"
+                android:layout_marginEnd="20dp"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:id="@+id/professionalsummarysingle"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Professional Summary"
+                    android:textSize="15sp"
+                    android:fontFamily="@font/mulish_semibold"
+                    android:layout_marginTop="20dp"
+                    android:layout_marginStart="20sp"
+                    android:textColor="@color/hrmstext"/>
+
+                <TextView
+                    android:id="@+id/professionalsummarydeatisl"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="-None-"
+                    android:textSize="14sp"
+                    android:fontFamily="@font/mulish_medium"
+                    android:layout_below="@+id/professionalsummarysingle"
+                    android:layout_marginStart="20sp"
+                    android:layout_marginTop="10dp"
+                    android:textColor="@color/hrmstext"/>
+
+            </RelativeLayout>
+        </RelativeLayout>
+    </RelativeLayout>
+    <ProgressBar
+        android:id="@+id/progressBar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:visibility="gone"/>
+</RelativeLayout>

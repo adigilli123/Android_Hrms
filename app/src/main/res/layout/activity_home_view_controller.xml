@@ -1,0 +1,198 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:local="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <androidx.drawerlayout.widget.DrawerLayout
+        android:id="@+id/drawer_layout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:theme="@style/AppTheme">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            tools:context=".Dashboard">
+
+            <RelativeLayout
+                android:id="@+id/toolbar_Rl"
+                android:layout_width="match_parent"
+                android:layout_height="100dp">
+
+                <androidx.appcompat.widget.Toolbar
+                    android:id="@+id/toolbar"
+                    android:layout_width="match_parent"
+                    android:layout_height="100dp"
+                    android:background="@drawable/gradient_background">
+
+                    <RelativeLayout
+                        android:id="@+id/topbarrv"
+                        android:layout_width="match_parent"
+                        android:layout_marginBottom="10dp"
+                        android:layout_height="wrap_content">
+
+                        <ImageView
+                            android:id="@+id/toolbar_icon"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentStart="true"
+                            android:layout_alignParentBottom="true"
+                            android:layout_marginStart="10dp"
+                            android:layout_marginEnd="10dp"
+                            android:src="@drawable/ic_menu"
+                            android:visibility="visible"/>
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentBottom="true"
+                            android:layout_marginStart="20dp"
+                            android:layout_marginLeft="21dp"
+                            android:layout_marginBottom="10dp"
+                            android:layout_toRightOf="@id/toolbar_icon"
+                            android:orientation="vertical">
+
+
+                            <TextView
+                                android:id="@+id/tittletext"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_alignParentBottom="true"
+                                android:layout_centerHorizontal="true"
+                                android:layout_marginStart="10dp"
+                                android:layout_marginEnd="10dp"
+                                android:fontFamily="@font/mulish_bold"
+                                android:text="Home"
+                                android:textColor="@color/white"
+                                android:textSize="15dp"/>
+                            <TextView
+                                android:id="@+id/myteamtitle"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_alignParentBottom="true"
+                                android:layout_centerHorizontal="true"
+                                android:layout_marginStart="10dp"
+                                android:layout_marginEnd="10dp"
+                                android:fontFamily="@font/mulish_bold"
+                                android:text="Check your team here"
+                                android:visibility="gone"
+                                android:textColor="@color/white"
+                                android:textSize="15dp"/>
+
+                            <TextView
+                                android:id="@+id/org"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text=""
+                                android:layout_above="@+id/nav_header_location"
+                                android:textSize="16sp"
+                                android:textStyle="bold"
+                                android:fontFamily="@font/mulish_bold"
+                                android:visibility="gone"
+                                android:layout_toRightOf="@+id/cardview"
+                                android:layout_marginStart="10sp"
+                                android:textColor="@color/hrmstext"/>
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:orientation="horizontal">
+                                <TextView
+                                    android:id="@+id/itfarm"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:text=""
+                                    android:textSize="13sp"
+                                    android:fontFamily="@font/mulish_medium"
+                                    android:visibility="gone"
+                                    android:layout_marginStart="10sp"
+                                    android:layout_alignParentBottom="true"
+                                    android:textColor="@color/hrmstext"/>
+
+                                <TextView
+                                    android:id="@+id/location"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:text=""
+                                    android:visibility="gone"
+                                    android:fontFamily="@font/mulish_medium"
+                                    android:textSize="13sp"
+                                    android:layout_marginStart="3sp"
+                                    android:layout_toRightOf="@+id/nav_header_it"
+                                    android:layout_alignParentBottom="true"
+                                    android:textColor="@color/hrmstext"/>
+                            </LinearLayout>
+                        </LinearLayout>
+
+                        <FrameLayout
+                            android:id="@+id/logout"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentEnd="true"
+                            android:layout_alignParentBottom="true"
+                            android:layout_gravity="center_vertical"
+                            android:layout_marginTop="20dp"
+                            android:layout_marginRight="15dp">
+
+                            <ImageView
+                                android:layout_width="25dp"
+                                android:layout_height="25dp"
+                                android:layout_gravity="end"
+                                android:visibility="gone"
+                                android:background="@drawable/ic_logout"/>
+                        </FrameLayout>
+                    </RelativeLayout>
+                </androidx.appcompat.widget.Toolbar>
+
+
+            </RelativeLayout>
+
+            <FrameLayout
+                android:id="@+id/flFragment"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_above="@id/bottom_navigation"
+                android:layout_below="@id/toolbar_Rl"
+                app:layout_constraintEnd_toEndOf="parent"
+                android:background="@color/hrmsbackgroundcolor"
+                app:layout_constraintHorizontal_bias="0.5"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                tools:ignore="NotSibling">
+            </FrameLayout>
+            <com.google.android.material.bottomnavigation.BottomNavigationView
+                android:id="@+id/bottom_navigation"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:layout_gravity="bottom"
+                android:background="@color/hrmsbackgroundcolor"
+                app:itemIconTint="@color/nav_color_selector"
+                app:itemTextColor="@color/nav_color_selector"
+                app:labelVisibilityMode="labeled"
+                app:menu="@menu/bottom_navigation"/>
+        </RelativeLayout>
+
+        <com.google.android.material.navigation.NavigationView
+            android:id="@+id/nav_view1"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_gravity="start"
+            android:fitsSystemWindows="true"
+            app:itemTextColor="@color/nav_item_text_color"
+            app:itemIconTint="@color/nav_item_icon_tint"
+            android:background="@color/hrmsbackgroundcolor"
+            app:itemTextAppearance="@font/mulish_medium"
+            app:headerLayout="@layout/nav_header"
+            app:menu="@menu/drawer_menu"/>
+    </androidx.drawerlayout.widget.DrawerLayout>
+    <ProgressBar
+        android:id="@+id/progressBar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:visibility="gone" />
+</RelativeLayout>

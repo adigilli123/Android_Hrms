@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/hrmsbackgroundcolor"
+    tools:context=".ManagerApproveRejectSingleEmployeeActivity">
+
+    <RelativeLayout
+        android:id="@+id/headerAllemp"
+        android:layout_width="match_parent"
+        android:layout_height="90dp"
+        android:background="@drawable/gradient_background"
+        android:paddingTop="30dp">
+
+        <ImageView
+            android:id="@+id/approvereject_back"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentBottom="true"
+            android:layout_marginStart="10dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginEnd="10dp"
+            android:layout_marginBottom="10dp"
+            android:src="@drawable/left_arrow"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginStart="10dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginEnd="10dp"
+            android:layout_marginBottom="10dp"
+            android:fontFamily="@font/montserratsemibold"
+            android:text="Approve or Reject"
+            android:textColor="@color/white"
+            android:textSize="14dp"/>
+    </RelativeLayout>
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_below="@+id/headerAllemp"
+        android:layout_height="wrap_content">
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/cardview"
+            android:layout_width="70dp"
+            android:layout_centerHorizontal="true"
+            android:layout_height="70dp"
+            android:layout_marginTop="20dp"
+            app:cardCornerRadius="1000dp">
+
+            <ImageView
+                android:id="@+id/singleEmpImage"
+                android:layout_width="70dp"
+                android:layout_height="70dp"
+                android:scaleType="fitXY"
+                android:src="@drawable/ic_profile"
+                android:contentDescription="profile_image"
+                android:layout_gravity="start"
+                android:layout_centerVertical="true" />
+        </androidx.cardview.widget.CardView>
+
+        <TextView
+            android:id="@+id/singleemp_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/cardview"
+            android:text="-None-"
+            android:fontFamily="@font/mulish_semibold"
+            android:textSize="22dp"
+            android:layout_marginTop="15dp"
+            android:textColor="@color/hrmstext"
+            android:layout_centerHorizontal="true"/>
+
+        <TextView
+            android:id="@+id/singleemp_designation"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/singleemp_name"
+            android:text="-None-"
+            android:textSize="14dp"
+            android:fontFamily="@font/mulish_medium"
+            android:layout_marginTop="3dp"
+            android:textColor="@color/icongrey"
+            android:layout_centerHorizontal="true"/>
+
+        <Button
+            android:id="@+id/approve_btn"
+            android:layout_width="120dp"
+            android:layout_height="wrap_content"
+            android:text="Approve"
+            android:textColor="@color/hrmstext"
+            android:layout_marginStart="20dp"
+            android:layout_marginTop="20dp"
+            android:backgroundTint="@color/bright_green"
+            android:layout_below="@+id/singleemp_designation"
+            android:layout_alignParentStart="true"/>
+
+        <Button
+            android:id="@+id/reject_btn"
+            android:layout_width="120dp"
+            android:layout_height="wrap_content"
+            android:text="Reject"
+            android:textColor="@color/hrmstext"
+            android:layout_marginEnd="20dp"
+            android:layout_marginTop="20dp"
+            android:backgroundTint="@color/M_Crimson_W3C"
+            android:layout_below="@+id/singleemp_designation"
+            android:layout_alignParentEnd="true"/>
+
+    </RelativeLayout>
+</RelativeLayout>
